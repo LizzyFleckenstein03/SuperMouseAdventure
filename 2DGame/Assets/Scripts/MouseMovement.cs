@@ -22,6 +22,7 @@ public class MouseMovement : MonoBehaviour
     void Start()
     {
         extraJumps = extraJumpsValue;
+        isGrounded = Physics2D.OverlapCircle(groundcheck.position, checkRadius, whatIsGround);
         //Hier wird der Rigidbody initialisiert
         rb = GetComponent<Rigidbody2D>();
     }
@@ -48,8 +49,6 @@ public class MouseMovement : MonoBehaviour
 
     void FixedUpdate() 
     {
-        isGrounded = Physics2D.OverlapCircle(groundcheck.position, checkRadius, whatIsGround);
-
         //Wenn a und d oder Pfeiltaste links und rechts gedrückt werden, ist der Wert von moveInput -1 oder 1;
         moveInput = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
