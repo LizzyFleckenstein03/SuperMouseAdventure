@@ -9,7 +9,7 @@ public class CheeseCoin : MonoBehaviour
 
     public GameObject cheeseCoin;
      
-    public Image cheeseCoinRenderer;
+    public Image cheeseCoinImage;
     public Sprite collectedCheeseCoin;
     public Sprite missingCheeseCoin;
 
@@ -24,22 +24,22 @@ public class CheeseCoin : MonoBehaviour
     {
         if (cheeseCoinCollected == true)
         {
-            cheeseCoinRenderer.sprite = collectedCheeseCoin;
-            cheeseCoin.SetActive(false);
+            cheeseCoinImage.sprite = collectedCheeseCoin;
         }
         else
         {
-            cheeseCoinRenderer.sprite = missingCheeseCoin;
+            cheeseCoinImage.sprite = missingCheeseCoin;
         }
 
-        transform.Rotate(new Vector3(0, 45, 0) * Time.deltaTime);
+        cheeseCoin.transform.Rotate(new Vector3(0, 45, 0) * Time.deltaTime);
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if(collision.CompareTag("CheeseCoin"))
         {
             cheeseCoinCollected = true;
+            collision.gameObject.SetActive(false);
         }
     }
 }

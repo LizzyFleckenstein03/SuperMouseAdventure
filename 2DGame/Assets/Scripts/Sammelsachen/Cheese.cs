@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Collectibles : MonoBehaviour
+public class Cheese : MonoBehaviour
 {
     public Text countText;
     private int cheesecount;
@@ -12,11 +12,11 @@ public class Collectibles : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Cheese"))
         {
-            collision.gameObject.SetActive(false);
-
             cheesecount++;
 
             SetCountText();
+
+            collision.gameObject.SetActive(false);
         }
     }
 

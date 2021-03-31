@@ -11,7 +11,7 @@ public class Checkpoint : MonoBehaviour
     private Abyss abyss;
     private Health health;
 
-    public bool retry;
+    public bool reset;
 
     // Start is called before the first frame update
     void Start()
@@ -25,10 +25,10 @@ public class Checkpoint : MonoBehaviour
     {
         if (abyss.fallenDown == true || health.mouseHealth == 0)
         {
-            retry = true;
+            reset = true;
         }
 
-        if (retry == true)
+        if (reset == true)
         {
             for (int i = 0; i < CheckPoints.Length; i++)
             {
@@ -38,8 +38,8 @@ public class Checkpoint : MonoBehaviour
 
                     if (Mouse.transform.position == CheckPoints[i].transform.position)
                     {
-                        retry =! retry;
-                        abyss.fallenDown =! abyss.fallenDown;
+                        reset = false;
+                        abyss.fallenDown = false;
                         health.mouseHealth = 5;
                     }
                 }
