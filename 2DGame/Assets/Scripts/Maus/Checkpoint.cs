@@ -32,7 +32,7 @@ public class Checkpoint : MonoBehaviour
         {
             for (int i = 0; i < CheckPoints.Length; i++)
             {
-                if (CheckPoints[i].transform.position.x < Mouse.transform.position.x)
+                if (CheckPoints[i].transform.position.x < Mouse.transform.position.x && CheckPoints[i+1].transform.position.x > Mouse.transform.position.x)
                 {
                     Mouse.transform.position = CheckPoints[i].transform.position;
 

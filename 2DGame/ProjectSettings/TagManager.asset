@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Checkpoint
   - Abyss
+  - CheeseCoin
   layers:
   - Default
   - TransparentFX
