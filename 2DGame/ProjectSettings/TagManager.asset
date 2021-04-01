@@ -9,6 +9,7 @@ TagManager:
   - Checkpoint
   - Abyss
   - CheeseCoin
+  - GardenCheese
   layers:
   - Default
   - TransparentFX
