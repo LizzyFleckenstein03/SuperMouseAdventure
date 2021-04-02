@@ -18,7 +18,6 @@ public class Checkpoint : MonoBehaviour
     {
         abyss = GetComponent<Abyss>();
         health = GetComponent<Health>();
-        print(CheckPoints.Length);
     }
 
     // Update is called once per frame
@@ -33,20 +32,20 @@ public class Checkpoint : MonoBehaviour
         {
             for (int i = 0; i < CheckPoints.Length; i++)
             {
-                if (CheckPoints[i].transform.position.x <= Mouse.transform.position.x && CheckPoints[i + 1].transform.position.x >= Mouse.transform.position.x)
+                if (CheckPoints[i].transform.position.x <= Mouse.transform.position.x && CheckPoints[i + 1].transform.position.x >= Mouse.transform.position.x && CheckPoints[CheckPoints.Length-1].transform.position.x > Mouse.transform.position.x)
                 {
                     Mouse.transform.position = CheckPoints[i].transform.position;
-                } 
+                }
                 else if (CheckPoints[0].transform.position.x >= Mouse.transform.position.x)
                 {
                     Mouse.transform.position = CheckPoints[0].transform.position;
                 }
-                else if(CheckPoints[CheckPoints.Length-1].transform.position.x <= Mouse.transform.position.x)
+                else if (CheckPoints[CheckPoints.Length - 1].transform.position.x <= Mouse.transform.position.x)
                 {
-                    Mouse.transform.position = CheckPoints[CheckPoints.Length-1].transform.position;
+                    Mouse.transform.position = CheckPoints[CheckPoints.Length - 1].transform.position;
                 }
 
-                if (Mouse.transform.position == CheckPoints[i].transform.position)
+                if (Mouse.transform.position == CheckPoints[i].transform.position || Mouse.transform.position == CheckPoints[CheckPoints.Length - 1].transform.position)
                 {
                     reset = false;
                     abyss.fallenDown = false;
