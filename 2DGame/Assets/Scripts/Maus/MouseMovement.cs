@@ -18,6 +18,9 @@ public class MouseMovement : MonoBehaviour
     private int extraJumps;
     public int extraJumpsValue;
 
+    private float leftSqueeze;
+    private float rightSqueeze;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +48,15 @@ public class MouseMovement : MonoBehaviour
         {
             rb.velocity = Vector2.up * jumpForce;
         }
- 
+
+        if (rb.velocity.x < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+        else if (rb.velocity.x > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
     }
 
     void FixedUpdate() 
@@ -56,14 +67,5 @@ public class MouseMovement : MonoBehaviour
         //Wenn a und d oder Pfeiltaste links und rechts gedrückt werden, ist der Wert von moveInput -1 oder 1;
         moveInput = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
-
-        if(rb.velocity.x < 0)
-        {
-            transform.localScale = new Vector3(-1, 1, 1);
-        }
-        else if (rb.velocity.x > 0)
-        {
-            transform.localScale = new Vector3(1, 1, 1);
-        }
     }
 }
