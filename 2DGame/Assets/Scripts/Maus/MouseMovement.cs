@@ -18,9 +18,6 @@ public class MouseMovement : MonoBehaviour
     private int extraJumps;
     public int extraJumpsValue;
 
-    private float leftSqueeze;
-    private float rightSqueeze;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +29,7 @@ public class MouseMovement : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   
+    {
         //Hier ist der Code für das Springen
         if(isGrounded == true)
         {
@@ -43,6 +40,7 @@ public class MouseMovement : MonoBehaviour
         {
             rb.velocity = Vector2.up * jumpForce;
             extraJumps--;
+            FindObjectOfType<AudioManager>().Play("sprung");
         } 
         else if(Input.GetButtonDown("Jump") && extraJumps == 0 && isGrounded == true)
         {
