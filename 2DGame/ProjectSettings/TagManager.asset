@@ -10,6 +10,7 @@ TagManager:
   - Abyss
   - CheeseCoin
   - GardenCheese
+  - Goal
   layers:
   - Default
   - TransparentFX

@@ -5,11 +5,11 @@ using UnityEngine;
 public class Background : MonoBehaviour
 {
     [SerializeField]
-    GameObject Mouse;
+    GameObject Camera;
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(Mouse.transform.position.x, transform.position.y, transform.position.z);
+        transform.position = new Vector3(Camera.transform.position.x, transform.position.y, transform.position.z);
     }
 }

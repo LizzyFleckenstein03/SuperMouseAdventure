@@ -22,6 +22,10 @@ public class Scissors : MonoBehaviour
     {
         if (collision.gameObject.layer == 6) {
             Destroy(gameObject);
+        } else if(collision.gameObject.CompareTag("Enemy"))
+        {
+            collision.gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 }
