@@ -17,6 +17,8 @@ public class MouseMovement : MonoBehaviour
 
     private int extraJumps;
     public int extraJumpsValue;
+    
+    private Animation anim;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +27,8 @@ public class MouseMovement : MonoBehaviour
         
         //Hier wird der Rigidbody initialisiert
         rb = GetComponent<Rigidbody2D>();
+
+        anim = GetComponent<Animation>();
     }
 
     // Update is called once per frame
@@ -45,6 +49,7 @@ public class MouseMovement : MonoBehaviour
         else if(Input.GetButtonDown("Jump") && extraJumps == 0 && isGrounded == true)
         {
             rb.velocity = Vector2.up * jumpForce;
+            anim.Play("secondJump");
         }
 
         if (rb.velocity.x < 0)

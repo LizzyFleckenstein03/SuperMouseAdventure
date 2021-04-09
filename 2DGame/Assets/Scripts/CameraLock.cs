@@ -19,7 +19,7 @@ public class CameraLock : MonoBehaviour
         }
         else
         {
-            transform.position = new Vector3(-9, 3, transform.position.z);
+            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         }
     }
 }

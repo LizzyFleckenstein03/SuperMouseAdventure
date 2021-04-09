@@ -48,5 +48,10 @@ public class Health : MonoBehaviour
         {
             mouseHealth--;
         }
+        else if(collision.CompareTag("Heart"))
+        {
+            mouseHealth++;
+            collision.gameObject.SetActive(false);
+        }
     }
 }

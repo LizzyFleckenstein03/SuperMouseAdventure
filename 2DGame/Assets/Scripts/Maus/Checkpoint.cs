@@ -49,7 +49,10 @@ public class Checkpoint : MonoBehaviour
                 {
                     reset = false;
                     abyss.fallenDown = false;
-                    health.mouseHealth = 5;
+                    if(health.mouseHealth == 0)
+                    {
+                        health.mouseHealth = 5;
+                    }
                 }
             }
         }
