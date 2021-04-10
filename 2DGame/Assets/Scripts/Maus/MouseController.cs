@@ -2,13 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class MouseMovement : MonoBehaviour
+public class MouseController : MonoBehaviour
 {
+    private Rigidbody2D rb;
     public float speed;
     public float jumpForce;
     private float moveInput;
-
-    private Rigidbody2D rb;
 
     private bool isGrounded;
     public Transform groundcheck;
@@ -17,6 +16,12 @@ public class MouseMovement : MonoBehaviour
 
     private int extraJumps;
     public int extraJumpsValue;
+
+    PowerUps powerUps;
+
+    Object scissorBullet;
+
+    public bool isFacingLeft;
     
     private Animation anim;
 
@@ -29,6 +34,8 @@ public class MouseMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         anim = GetComponent<Animation>();
+
+        scissorBullet = Resources.Load("schere");
     }
 
     // Update is called once per frame
@@ -55,10 +62,21 @@ public class MouseMovement : MonoBehaviour
         if (rb.velocity.x < 0)
         {
             transform.localScale = new Vector3(-1, 1, 1);
+            isFacingLeft = true;
         }
         else if (rb.velocity.x > 0)
         {
             transform.localScale = new Vector3(1, 1, 1);
+            isFacingLeft = false;
+        }
+
+        if (powerUps.mouseIsGardener == true)
+        {
+            if (Input.GetButtonDown("Fire1"))
+            {
+                GameObject scissor = (GameObject)Instantiate(scissorBullet);
+                scissor.transform.position = new Vector3(transform.position.x + 10f, transform.position.y, transform.position.z);
+            }
         }
     }
 
