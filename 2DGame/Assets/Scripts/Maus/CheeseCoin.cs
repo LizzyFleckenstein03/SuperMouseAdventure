@@ -13,12 +13,6 @@ public class CheeseCoin : MonoBehaviour
     public Sprite collectedCheeseCoin;
     public Sprite missingCheeseCoin;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -28,6 +22,7 @@ public class CheeseCoin : MonoBehaviour
         }
         else
         {
+            //gibt eine NullReferenceException aus, wahrscheinlich weil das Image zum Canvas gehört, auf den die Maus keinen Zugriff hat
             cheeseCoinImage.sprite = missingCheeseCoin;
         }
 

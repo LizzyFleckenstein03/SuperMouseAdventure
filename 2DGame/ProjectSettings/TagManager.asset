@@ -12,6 +12,7 @@ TagManager:
   - GardenCheese
   - Goal
   - Heart
+  - Bullet
   layers:
   - Default
   - TransparentFX

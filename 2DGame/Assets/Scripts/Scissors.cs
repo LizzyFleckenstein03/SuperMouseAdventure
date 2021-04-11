@@ -4,19 +4,35 @@ using UnityEngine;
 
 public class Scissors : MonoBehaviour
 {
-    Rigidbody2D rb;
+    [SerializeField]
+    float speed;
 
-    // Update is called once per frame
-    public void FixedUpdate()
+    [SerializeField]
+    float lifeTime = 10;
+
+    public void StartShoot(bool isFacingLeft)
     {
-            rb.velocity = new Vector2(10, 0);
+        Rigidbody2D rb2d = GetComponent<Rigidbody2D>();
+        if(isFacingLeft == true)
+        {
+            rb2d.velocity = new Vector2(-speed, 0);
+            transform.localScale = new Vector3(-0.4f, 0.4f, 1);
+        }
+        else
+        {
+            rb2d.velocity = new Vector2(speed, 0);
+            transform.localScale = new Vector3(0.4f, 0.4f, 1);
+        }
+
+        Destroy(gameObject, lifeTime);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.layer == 6) {
             Destroy(gameObject);
-        } else if(collision.gameObject.CompareTag("Enemy"))
+        }
+        else if(collision.gameObject.CompareTag("Enemy"))
         {
             collision.gameObject.SetActive(false);
             Destroy(gameObject);

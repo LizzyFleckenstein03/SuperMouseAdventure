@@ -19,11 +19,18 @@ public class MouseController : MonoBehaviour
 
     PowerUps powerUps;
 
-    Object scissorBullet;
-
     public bool isFacingLeft;
     
     private Animation anim;
+    private bool isShooting;
+
+    private Object bulletRef;
+    [SerializeField]
+    GameObject bullet;
+    [SerializeField]
+    Transform bulletSpawnPos;
+    [SerializeField]
+    private float shootDelay = 0.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +42,7 @@ public class MouseController : MonoBehaviour
 
         anim = GetComponent<Animation>();
 
-        scissorBullet = Resources.Load("schere");
+        powerUps = GetComponent<PowerUps>();
     }
 
     // Update is called once per frame
@@ -70,12 +77,20 @@ public class MouseController : MonoBehaviour
             isFacingLeft = false;
         }
 
-        if (powerUps.mouseIsGardener == true)
+        //gibt eine NullreferenceException
+        if(powerUps.mouseIsGardener == true)
         {
             if (Input.GetButtonDown("Fire1"))
             {
-                GameObject scissor = (GameObject)Instantiate(scissorBullet);
-                scissor.transform.position = new Vector3(transform.position.x + 10f, transform.position.y, transform.position.z);
+                if (isShooting) return;
+
+                isShooting = true;
+
+                GameObject b = Instantiate(bullet);
+                b.GetComponent<Scissors>().StartShoot(isFacingLeft);
+                b.transform.position = bulletSpawnPos.transform.position;
+
+                Invoke("ResetShoot", shootDelay);
             }
         }
     }
@@ -88,5 +103,10 @@ public class MouseController : MonoBehaviour
         //Wenn a und d oder Pfeiltaste links und rechts gedrückt werden, ist der Wert von moveInput -1 oder 1;
         moveInput = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+    }
+
+    void ResetShoot()
+    {
+        isShooting = false;
     }
 }
