@@ -7,6 +7,9 @@ public class MouseController : MonoBehaviour
     private Rigidbody2D rb;
     public float speed;
     public float jumpForce;
+    private float jumpTimeCounter;
+    public float jumptime;
+    private bool isJumping;
     private float moveInput;
 
     private bool isGrounded;
@@ -48,22 +51,43 @@ public class MouseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Hier ist der Code für das Springen
         if(isGrounded == true)
         {
             extraJumps = extraJumpsValue;
         }
 
-        if (Input.GetButtonDown("Jump") && extraJumps > 0)
+        if(isGrounded == true && Input.GetButtonDown("Jump"))
         {
+            isJumping = true;
+            jumpTimeCounter = jumptime;
             rb.velocity = Vector2.up * jumpForce;
+        }
+
+        if (Input.GetButton("Jump") && isJumping == true && extraJumps > 0)
+        {
+            if(jumpTimeCounter > 0)
+            {
+                rb.velocity = Vector2.up * jumpForce;
+                jumpTimeCounter -= Time.deltaTime;
+            }
             extraJumps--;
-            FindObjectOfType<AudioManager>().Play("sprung");
-        } 
-        else if(Input.GetButtonDown("Jump") && extraJumps == 0 && isGrounded == true)
+        }
+        else if (Input.GetButton("Jump") && extraJumps == 0)
         {
-            rb.velocity = Vector2.up * jumpForce;
-            anim.Play("secondJump");
+            if (jumpTimeCounter > 0)
+            {
+                rb.velocity = Vector2.up * jumpForce;
+                jumpTimeCounter -= Time.deltaTime;
+            }
+            else
+            {
+                isJumping = false;
+            }
+        }
+
+        if (Input.GetButtonUp("Jump"))
+        {
+            isJumping = false;
         }
 
         if (rb.velocity.x < 0)
@@ -77,7 +101,6 @@ public class MouseController : MonoBehaviour
             isFacingLeft = false;
         }
 
-        //gibt eine NullreferenceException
         if(powerUps.mouseIsGardener == true)
         {
             if (Input.GetButtonDown("Fire1"))
