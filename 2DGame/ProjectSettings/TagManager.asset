@@ -10,9 +10,9 @@ TagManager:
   - Abyss
   - CheeseCoin
   - GardenCheese
-  - Goal
   - Heart
   - Bullet
+  - Boss
   layers:
   - Default
   - TransparentFX
