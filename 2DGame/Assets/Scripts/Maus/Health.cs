@@ -10,7 +10,7 @@ public class Health : MonoBehaviour
 
     public Image[] hearts;
     public Sprite fullHeart;
-    public Sprite empytyHeart;
+    public Sprite emptyHeart;
 
     // Update is called once per frame
     void Update()
@@ -28,7 +28,7 @@ public class Health : MonoBehaviour
                 hearts[i].sprite = fullHeart;
             } else
             {
-                hearts[i].sprite = empytyHeart;
+                hearts[i].sprite = emptyHeart;
             }
 
             if(i < numberOfHearts)

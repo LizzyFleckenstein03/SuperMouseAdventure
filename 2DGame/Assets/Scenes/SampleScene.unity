@@ -2631,6 +2631,7 @@ GameObject:
   - component: {fileID: 243225406}
   - component: {fileID: 243225405}
   - component: {fileID: 243225410}
+  - component: {fileID: 243225409}
   m_Layer: 0
   m_Name: schnecke
   m_TagString: Boss
@@ -3162,6 +3163,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 119
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &243225409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243225404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90fe3f76dbced4a4c8e488e96dd9c1b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossHealth: 12
+  numberOfHearts: 12
+  bossHearts:
+  - {fileID: 1400477798}
+  - {fileID: 194630536}
+  - {fileID: 1864406220}
+  - {fileID: 1625269337}
+  - {fileID: 867838451}
+  - {fileID: 816615896}
+  - {fileID: 726379607}
+  - {fileID: 1029742219}
+  - {fileID: 1120992168}
+  - {fileID: 506468296}
+  - {fileID: 270560371}
+  - {fileID: 1605026745}
+  fullHeart: {fileID: 21300000, guid: ed62606c8884d0c4f98cec1aced88bc2, type: 3}
+  emptyHeart: {fileID: 21300000, guid: f0a4f4e3dcd85cb4cba379c2b8452f70, type: 3}
 --- !u!114 &243225410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3174,10 +3204,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39479acd30347df4590068444dc83a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startBossHealth: 12
   bossName: Schnecke
   bossText: {fileID: 1350018457}
-  healthBar: {fileID: 0}
 --- !u!1 &244140546
 GameObject:
   m_ObjectHideFlags: 0
@@ -15847,7 +15875,7 @@ MonoBehaviour:
   - {fileID: 311476190}
   - {fileID: 397286150}
   fullHeart: {fileID: 21300000, guid: 46a74d1428d29c342a3d11cb96df7622, type: 3}
-  empytyHeart: {fileID: 21300000, guid: f0a4f4e3dcd85cb4cba379c2b8452f70, type: 3}
+  emptyHeart: {fileID: 21300000, guid: f0a4f4e3dcd85cb4cba379c2b8452f70, type: 3}
 --- !u!114 &936765977
 MonoBehaviour:
   m_ObjectHideFlags: 0
