@@ -44,7 +44,7 @@ public class Health : MonoBehaviour
     //Bei Berührung mit einem Gegner wird die Gesundheit um 1 verringert
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Enemy"))
+        if(collision.CompareTag("Enemy") || collision.CompareTag("Boss"))
         {
             mouseHealth--;
         }
