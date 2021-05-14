@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class MouseController : MonoBehaviour
 {
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     public float speed;
     public float jumpForce;
     private float jumpTimeCounter;
@@ -69,6 +69,7 @@ public class MouseController : MonoBehaviour
             {
                 rb.velocity = Vector2.up * jumpForce;
                 jumpTimeCounter -= Time.deltaTime;
+                FindObjectOfType<AudioManager>().Play("sprung");
             }
             extraJumps--;
         }
@@ -78,6 +79,7 @@ public class MouseController : MonoBehaviour
             {
                 rb.velocity = Vector2.up * jumpForce;
                 jumpTimeCounter -= Time.deltaTime;
+                FindObjectOfType<AudioManager>().Play("sprung");
             }
             else
             {

@@ -134,10 +134,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2991842}
   - component: {fileID: 2991841}
-  - component: {fileID: 2991840}
   - component: {fileID: 2991839}
-  - component: {fileID: 2991843}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: trampulin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,27 +168,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!50 &2991840
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2991838}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: 0d71ef707d576ad4d86c2719ad66d67a, type: 2}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 7
 --- !u!212 &2991841
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -251,25 +228,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2991838}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 338.17, y: -48.73, z: 0}
+  m_LocalPosition: {x: 337.18, y: -48.43, z: 0}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 120
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2991843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2991838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06b3cb048e950a54fb218eb3092ff8be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bumper: {fileID: 0}
 --- !u!1 &12591684
 GameObject:
   m_ObjectHideFlags: 0
@@ -1825,7 +1789,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 124
+  m_RootOrder: 123
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &194630534
 GameObject:
@@ -2725,8 +2689,8 @@ GameObject:
   - component: {fileID: 243225407}
   - component: {fileID: 243225406}
   - component: {fileID: 243225405}
-  - component: {fileID: 243225410}
   - component: {fileID: 243225411}
+  - component: {fileID: 243225410}
   - component: {fileID: 243225409}
   - component: {fileID: 243225412}
   m_Layer: 0
@@ -5109,7 +5073,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 125
+  m_RootOrder: 124
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &461211818
 GameObject:
@@ -15730,6 +15694,7 @@ GameObject:
   - component: {fileID: 936765979}
   - component: {fileID: 936765980}
   - component: {fileID: 936765981}
+  - component: {fileID: 936765982}
   m_Layer: 0
   m_Name: maus
   m_TagString: Player
@@ -15752,7 +15717,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 5
+  m_GravityScale: 8
   m_Material: {fileID: 6200000, guid: a0e76db9e40770140a1212c57564ee2a, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -15817,7 +15782,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936765968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 730, y: 63, z: 0}
+  m_LocalPosition: {x: -40.2, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 972365582}
@@ -15853,8 +15818,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09ce03f84d2a0384eaeb226cb6fbdf5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
   speed: 30
-  jumpForce: 20
+  jumpForce: 30
   jumptime: 0.5
   groundcheck: {fileID: 972365582}
   checkRadius: 0.5
@@ -16087,6 +16053,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelGeschafft: {fileID: 423319633}
+--- !u!114 &936765982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936765968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f9f24ed35530f341bcc1f0f30535544, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  springForce: 90
+  groundcheck: {fileID: 972365582}
+  whatIsBumper:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &939989686
 GameObject:
   m_ObjectHideFlags: 0
@@ -19279,7 +19262,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 123
+  m_RootOrder: 122
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1236178932
 GameObject:
@@ -21933,77 +21916,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1625269335}
   m_CullTransparentMesh: 1
---- !u!1 &1678336078
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1678336081}
-  - component: {fileID: 1678336080}
-  - component: {fileID: 1678336079}
-  m_Layer: 0
-  m_Name: trampulin_ausloeser
-  m_TagString: Untagged
-  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &1678336079
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678336078}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.13606262, y: 2.399128}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 8.598907, y: 8.285217}
-  m_EdgeRadius: 0
---- !u!114 &1678336080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678336078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06b3cb048e950a54fb218eb3092ff8be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bumper: {fileID: 2991838}
---- !u!4 &1678336081
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678336078}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 346.71, y: -49.97, z: -308.47876}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 121
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1688037230
 GameObject:
   m_ObjectHideFlags: 0
@@ -22781,11 +22693,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1735132467}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 812.4, y: 55, z: -209.831}
+  m_LocalPosition: {x: 796, y: 55, z: -209.831}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 128
+  m_RootOrder: 127
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1767765324
 GameObject:
@@ -23155,7 +23067,7 @@ Transform:
   m_Children:
   - {fileID: 61094371}
   m_Father: {fileID: 0}
-  m_RootOrder: 129
+  m_RootOrder: 128
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1817527321
 GameObject:
@@ -24341,7 +24253,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 126
+  m_RootOrder: 125
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2028810948
 GameObject:
@@ -24492,7 +24404,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 127
+  m_RootOrder: 126
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2050776008
 GameObject:
@@ -24917,7 +24829,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 122
+  m_RootOrder: 121
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2133958521
 GameObject:
