@@ -11,10 +11,10 @@ public class FollowPlayer : MonoBehaviour
     Transform player;
 
     [SerializeField]
-    float agroRange;
+    private float agroRange;
 
     [SerializeField]
-    float MoveSpeed;
+    private float MoveSpeed;
 
     Rigidbody2D rb;
 

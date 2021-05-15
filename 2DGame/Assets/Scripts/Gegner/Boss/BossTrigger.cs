@@ -7,8 +7,7 @@ public class BossTrigger : MonoBehaviour
     [SerializeField]
     private Transform bossTrigger;
 
-    [SerializeField]
-    private Transform mouse;
+    public Transform mouse;
 
     public bool bossFight;
 
