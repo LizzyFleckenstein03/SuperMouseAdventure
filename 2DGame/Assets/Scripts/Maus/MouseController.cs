@@ -17,17 +17,12 @@ public class MouseController : MonoBehaviour
     public float checkRadius;
     public LayerMask whatIsGround;
 
-    private int extraJumps;
-    public int extraJumpsValue;
-
     PowerUps powerUps;
 
     public bool isFacingLeft;
     
-    private Animation anim;
     private bool isShooting;
 
-    private Object bulletRef;
     [SerializeField]
     GameObject bullet;
     [SerializeField]
@@ -37,13 +32,9 @@ public class MouseController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-        extraJumps = extraJumpsValue;
-        
+    {   
         //Hier wird der Rigidbody initialisiert
         rb = GetComponent<Rigidbody2D>();
-
-        anim = GetComponent<Animation>();
 
         powerUps = GetComponent<PowerUps>();
     }
@@ -51,11 +42,6 @@ public class MouseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isGrounded == true)
-        {
-            extraJumps = extraJumpsValue;
-        }
-
         if(isGrounded == true && Input.GetButtonDown("Jump"))
         {
             isJumping = true;
@@ -63,27 +49,13 @@ public class MouseController : MonoBehaviour
             rb.velocity = Vector2.up * jumpForce;
         }
 
-        if (Input.GetButton("Jump") && isJumping == true && extraJumps > 0)
+        if (Input.GetButton("Jump") && isJumping == true)
         {
             if(jumpTimeCounter > 0)
             {
                 rb.velocity = Vector2.up * jumpForce;
                 jumpTimeCounter -= Time.deltaTime;
                 FindObjectOfType<AudioManager>().Play("sprung");
-            }
-            extraJumps--;
-        }
-        else if (Input.GetButton("Jump") && extraJumps == 0)
-        {
-            if (jumpTimeCounter > 0)
-            {
-                rb.velocity = Vector2.up * jumpForce;
-                jumpTimeCounter -= Time.deltaTime;
-                FindObjectOfType<AudioManager>().Play("sprung");
-            }
-            else
-            {
-                isJumping = false;
             }
         }
 
@@ -103,7 +75,7 @@ public class MouseController : MonoBehaviour
             isFacingLeft = false;
         }
 
-        if(powerUps.mouseIsGardener == true)
+        if(powerUps.mouseIsGardener == true && powerUps.poweredUp == true)
         {
             if (Input.GetButtonDown("Fire1"))
             {

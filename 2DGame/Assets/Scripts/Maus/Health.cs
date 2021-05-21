@@ -12,6 +12,13 @@ public class Health : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
+    PowerUps powerUps;
+
+    private void Start()
+    {
+        powerUps = GetComponent<PowerUps>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -42,16 +49,16 @@ public class Health : MonoBehaviour
     }
 
     //Bei Berührung mit einem Gegner wird die Gesundheit um 1 verringert
-    public void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.CompareTag("Enemy") || collision.CompareTag("Boss"))
+        if(collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Boss"))
         {
             mouseHealth--;
+            powerUps.poweredUp = false;
         }
-        else if(collision.CompareTag("Heart"))
+        else if(collision.gameObject.CompareTag("Heart"))
         {
             mouseHealth++;
-            collision.gameObject.SetActive(false);
         }
     }
 }

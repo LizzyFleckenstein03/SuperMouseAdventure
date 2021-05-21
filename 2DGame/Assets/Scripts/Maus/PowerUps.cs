@@ -8,14 +8,15 @@ public class PowerUps : MonoBehaviour
     public SpriteRenderer mouseRenderer;
     public Sprite gardenMouse;
 
+    public bool poweredUp;
     public bool mouseIsGardener;
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("GardenCheese"))
         {
-            mouseRenderer.sprite = gardenMouse;
             mouseIsGardener = true;
+            poweredUp = true;
             collision.gameObject.SetActive(false);
         }
     }
