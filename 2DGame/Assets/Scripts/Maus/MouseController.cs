@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class MouseController : MonoBehaviour
 {
-    public Rigidbody2D rb;
+    Rigidbody2D rb;
     public float speed;
     public float jumpForce;
     private float jumpTimeCounter;
