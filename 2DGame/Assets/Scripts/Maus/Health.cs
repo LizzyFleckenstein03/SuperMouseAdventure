@@ -48,7 +48,7 @@ public class Health : MonoBehaviour
         }
     }
 
-    //Bei Berührung mit einem Gegner wird die Gesundheit um 1 verringert
+    //Bei Ber?hrung mit einem Gegner wird die Gesundheit um 1 verringert
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Boss"))
@@ -59,6 +59,7 @@ public class Health : MonoBehaviour
         else if(collision.gameObject.CompareTag("Heart"))
         {
             mouseHealth++;
+            collision.gameObject.SetActive(false);
         }
     }
 }

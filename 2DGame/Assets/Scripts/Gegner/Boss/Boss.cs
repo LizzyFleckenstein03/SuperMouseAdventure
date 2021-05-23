@@ -33,6 +33,7 @@ public class Boss : MonoBehaviour
         {
             bossText.enabled = true;
             bossText.text = bossName;
+            FindObjectOfType<AudioManager>().Play("snail_fight");
         } else
         {
             bossText.enabled = false;
@@ -81,7 +82,7 @@ public class Boss : MonoBehaviour
         }
     }
 
-    //Bei Berührung mit der Schere oder der Maus wird die Gesundheit um 1 verringert
+    //Bei Ber?hrung mit der Schere oder der Maus wird die Gesundheit um 1 verringert
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if(bossTrigger.bossFight == true)
