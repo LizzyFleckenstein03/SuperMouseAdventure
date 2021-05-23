@@ -75,7 +75,7 @@ public class MouseController : MonoBehaviour
             isFacingLeft = false;
         }
 
-        if(powerUps.mouseIsGardener == true && powerUps.poweredUp == true)
+        if(powerUps.mouseIsGardener == true)
         {
             if (Input.GetButtonDown("Fire1"))
             {

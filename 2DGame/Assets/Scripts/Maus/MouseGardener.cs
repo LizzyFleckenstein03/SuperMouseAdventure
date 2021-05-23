@@ -17,13 +17,17 @@ public class MouseGardener : StateMachineBehaviour
     {
         if(powerUps.mouseIsGardener == true)
         {
-            animator.SetTrigger("mouseIsGardener");
+            animator.SetBool("gardener", true);
+        }
+        else
+        {
+            animator.SetBool("gardener", false);
         }
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.ResetTrigger("mouseIsGardener");
+
     }
 }
