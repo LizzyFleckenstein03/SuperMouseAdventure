@@ -33,7 +33,7 @@ public class Boss : MonoBehaviour
         {
             bossText.enabled = true;
             bossText.text = bossName;
-            FindObjectOfType<AudioManager>().Play("snail_fight");
+            //FindObjectOfType<AudioManager>().Play("snail_fight");
         } else
         {
             bossText.enabled = false;

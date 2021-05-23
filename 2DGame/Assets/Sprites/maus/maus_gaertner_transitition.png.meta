@@ -1,0 +1,528 @@
+fileFormatVersion: 2
+guid: e2c8d138bb4461841ac2d2a2b71d2e12
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1779178863233599495
+    second: maus_gaertner_transitition_0
+  - first:
+      213: 85519693702481214
+    second: maus_gaertner_transitition_1
+  - first:
+      213: -257356044669065320
+    second: maus_gaertner_transitition_2
+  - first:
+      213: -3244637711366124157
+    second: maus_gaertner_transitition_3
+  - first:
+      213: 957274874031791340
+    second: maus_gaertner_transitition_4
+  - first:
+      213: 7880793518187558272
+    second: maus_gaertner_transitition_5
+  - first:
+      213: 741052575539296730
+    second: maus_gaertner_transitition_6
+  - first:
+      213: 1229577534439203458
+    second: maus_gaertner_transitition_7
+  - first:
+      213: 182620595634371242
+    second: maus_gaertner_transitition_8
+  - first:
+      213: -2263122352877315130
+    second: maus_gaertner_transitition_9
+  - first:
+      213: 6683104405142862146
+    second: maus_gaertner_transitition_10
+  - first:
+      213: -1767054865041919481
+    second: maus_gaertner_transitition_11
+  - first:
+      213: -1335576132014134309
+    second: maus_gaertner_transitition_12
+  - first:
+      213: 1877373937256157187
+    second: maus_gaertner_transitition_13
+  - first:
+      213: -181719003187105045
+    second: maus_gaertner_transitition_15
+  - first:
+      213: 4641877437209557871
+    second: maus_gaertner_transitition_16
+  - first:
+      213: -3985870593778221772
+    second: maus_gaertner_transitition_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: maus_gaertner_transitition_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3048
+        width: 746
+        height: 743
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7080ce6efb9e0b810800000000000000
+      internalID: 1779178863233599495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maus_gaertner_transitition_1
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 3051
+        width: 749
+        height: 745
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35cf6455b3df2100800000000000000
+      internalID: 85519693702481214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maus_gaertner_transitition_2
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 3102
+        width: 750
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89763b87a00bd6cf0800000000000000
+      internalID: -257356044669065320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maus_gaertner_transitition_3
+      rect:
+        serializedVersion: 2
+        x: 2848
+        y: 3150
+        width: 750
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d8f2d313bb8f2d0800000000000000
+      internalID: -3244637711366124157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maus_gaertner_transitition_4
+      rect:
+        serializedVersion: 2
+        x: 3809
+        y: 3206
+        width: 749
+        height: 743
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec52131d6ce84d00800000000000000
+      internalID: 957274874031791340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maus_gaertner_transitition_5
+      rect:
+        serializedVersion: 2
+        x: 4006
+        y: 2235
+        width: 758
+        height: 769
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08535c753f33e5d60800000000000000
+      internalID: 7880793518187558272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maus_gaertner_transitition_6
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 2003
+        width: 750
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad978e4246fb84a00800000000000000
+      internalID: 741052575539296730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maus_gaertner_transitition_7
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 2056
+        width: 749
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282ac04c046501110800000000000000
+      internalID: 1229577534439203458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maus_gaertner_transitition_8
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 2141
+        width: 747
+        height: 745
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaaf473d67cc88200800000000000000
+      internalID: 182620595634371242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maus_gaertner_transitition_9
+      rect:
+        serializedVersion: 2
+        x: 3013
+        y: 2155
+        width: 750
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb5089e536c790e0800000000000000
+      internalID: -2263122352877315130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maus_gaertner_transitition_10
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1101
+        width: 756
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24973614c082fbc50800000000000000
+      internalID: 6683104405142862146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maus_gaertner_transitition_11
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 1159
+        width: 750
+        height: 745
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702fc8666f82a77e0800000000000000
+      internalID: -1767054865041919481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maus_gaertner_transitition_12
+      rect:
+        serializedVersion: 2
+        x: 2384
+        y: 1159
+        width: 747
+        height: 745
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdbaec88594177de0800000000000000
+      internalID: -1335576132014134309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maus_gaertner_transitition_13
+      rect:
+        serializedVersion: 2
+        x: 3408
+        y: 1189
+        width: 857
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300dab036a5cd0a10800000000000000
+      internalID: 1877373937256157187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maus_gaertner_transitition_15
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 0
+        width: 858
+        height: 807
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2381687876a7df0800000000000000
+      internalID: -181719003187105045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maus_gaertner_transitition_16
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 60
+        width: 859
+        height: 731
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6bb6c77fe24b6040800000000000000
+      internalID: 4641877437209557871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maus_gaertner_transitition_17
+      rect:
+        serializedVersion: 2
+        x: 4593
+        y: 1066
+        width: 871
+        height: 958
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d7c2120d75fa8c0800000000000000
+      internalID: -3985870593778221772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
