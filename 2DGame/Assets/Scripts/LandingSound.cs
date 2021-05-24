@@ -10,9 +10,9 @@ public class LandingSound : MonoBehaviour
     [SerializeField]
     GameObject dustEffect;
 
-    private void OnCollisionEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if(collision.gameObject.CompareTag("Player"))
         {
             FindObjectOfType<AudioManager>().Play("landung");
             Instantiate(dustEffect, groundCheck.transform.position, Quaternion.identity);
