@@ -90,6 +90,8 @@ public class MouseController : MonoBehaviour
                 Invoke("ResetShoot", shootDelay);
             }
         }
+
+        print(moveInput);
     }
 
     void FixedUpdate() 
@@ -100,7 +102,8 @@ public class MouseController : MonoBehaviour
         //Wenn a und d oder Pfeiltaste links und rechts gedrückt werden, ist der Wert von moveInput -1 oder 1;
         moveInput = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
-    }
+
+    } 
 
     void ResetShoot()
     {
