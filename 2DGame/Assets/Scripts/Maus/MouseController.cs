@@ -90,8 +90,6 @@ public class MouseController : MonoBehaviour
                 Invoke("ResetShoot", shootDelay);
             }
         }
-
-        print(moveInput);
     }
 
     void FixedUpdate() 

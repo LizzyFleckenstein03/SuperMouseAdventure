@@ -8,6 +8,7 @@ public class CheeseCoin : MonoBehaviour
     private bool cheeseCoinCollected;
 
     public GameObject cheeseCoin;
+    public Canvas canvas;
      
     public Image cheeseCoinImage;
     public Sprite collectedCheeseCoin;
@@ -22,7 +23,7 @@ public class CheeseCoin : MonoBehaviour
         }
         else
         {
-            //gibt eine NullReferenceException aus, wahrscheinlich weil das Image zum Canvas gehört, auf den die Maus keinen Zugriff hat
+            //gibt eine NullReferenceException aus
             cheeseCoinImage.sprite = missingCheeseCoin;
         }
 
