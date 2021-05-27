@@ -8,7 +8,6 @@ public class CheeseCoin : MonoBehaviour
     private bool cheeseCoinCollected;
 
     public GameObject cheeseCoin;
-    public Canvas canvas;
      
     public Image cheeseCoinImage;
     public Sprite collectedCheeseCoin;
