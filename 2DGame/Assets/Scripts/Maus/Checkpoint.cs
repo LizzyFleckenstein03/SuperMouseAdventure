@@ -11,6 +11,7 @@ public class Checkpoint : MonoBehaviour
     private Abyss abyss;
     private Health health;
 
+    [HideInInspector]
     public bool reset;
 
     // Start is called before the first frame update
