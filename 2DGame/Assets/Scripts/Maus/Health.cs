@@ -56,10 +56,5 @@ public class Health : MonoBehaviour
             mouseHealth--;
             powerUps.mouseIsGardener = false;
         }
-        else if(collision.gameObject.CompareTag("Heart"))
-        {
-            mouseHealth++;
-            collision.gameObject.SetActive(false);
-        }
     }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraLock : MonoBehaviour
+public class CameraBehaviour : MonoBehaviour
 {
     [SerializeField]
     GameObject begrenzer;
@@ -15,7 +15,7 @@ public class CameraLock : MonoBehaviour
     {
         if (maus.transform.position.x > begrenzer.transform.position.x)
         {
-            transform.position = new Vector3(maus.transform.position.x, maus.transform.position.y, -10);
+            transform.position = new Vector3(maus.transform.position.x, maus.transform.position.y-8, -10);
         }
         else
         {
