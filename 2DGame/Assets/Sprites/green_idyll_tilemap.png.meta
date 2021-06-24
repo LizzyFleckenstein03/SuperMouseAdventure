@@ -44,6 +44,12 @@ TextureImporter:
   - first:
       213: -2822047369393313844
     second: green_idyll_tilemap_15
+  - first:
+      213: -4548731965703398853
+    second: green_idyll_tilemap_11
+  - first:
+      213: 2652592514305092736
+    second: green_idyll_tilemap_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -84,8 +90,8 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
-  spriteMeshType: 1
+  spriteExtrude: 0
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -109,8 +115,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureFormat: 3
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,8 +127,8 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureFormat: 3
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -133,8 +139,8 @@ TextureImporter:
     buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureFormat: 3
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -149,9 +155,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 700
-        width: 700
-        height: 700
+        y: 701
+        width: 699
+        height: 699
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,10 +175,10 @@ TextureImporter:
       name: green_idyll_tilemap_1
       rect:
         serializedVersion: 2
-        x: 700
-        y: 700
-        width: 700
-        height: 700
+        x: 699
+        y: 701
+        width: 699
+        height: 699
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,10 +196,10 @@ TextureImporter:
       name: green_idyll_tilemap_2
       rect:
         serializedVersion: 2
-        x: 1400
-        y: 700
-        width: 700
-        height: 700
+        x: 1398
+        y: 701
+        width: 699
+        height: 699
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,10 +217,10 @@ TextureImporter:
       name: green_idyll_tilemap_3
       rect:
         serializedVersion: 2
-        x: 2100
-        y: 700
-        width: 700
-        height: 700
+        x: 2097
+        y: 701
+        width: 699
+        height: 699
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,10 +238,10 @@ TextureImporter:
       name: green_idyll_tilemap_4
       rect:
         serializedVersion: 2
-        x: 2800
-        y: 700
-        width: 700
-        height: 700
+        x: 2796
+        y: 701
+        width: 699
+        height: 699
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,10 +259,10 @@ TextureImporter:
       name: green_idyll_tilemap_5
       rect:
         serializedVersion: 2
-        x: 3500
-        y: 700
-        width: 700
-        height: 700
+        x: 3495
+        y: 701
+        width: 699
+        height: 699
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,10 +280,10 @@ TextureImporter:
       name: green_idyll_tilemap_6
       rect:
         serializedVersion: 2
-        x: 4200
-        y: 700
-        width: 700
-        height: 700
+        x: 4194
+        y: 701
+        width: 699
+        height: 699
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,10 +301,10 @@ TextureImporter:
       name: green_idyll_tilemap_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 700
-        height: 700
+        x: 4893
+        y: 701
+        width: 699
+        height: 699
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,10 +322,10 @@ TextureImporter:
       name: green_idyll_tilemap_8
       rect:
         serializedVersion: 2
-        x: 700
-        y: 0
-        width: 700
-        height: 700
+        x: 0
+        y: 2
+        width: 699
+        height: 699
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,10 +343,10 @@ TextureImporter:
       name: green_idyll_tilemap_9
       rect:
         serializedVersion: 2
-        x: 1400
-        y: 0
-        width: 700
-        height: 700
+        x: 699
+        y: 2
+        width: 699
+        height: 699
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,10 +364,10 @@ TextureImporter:
       name: green_idyll_tilemap_10
       rect:
         serializedVersion: 2
-        x: 2100
-        y: 0
-        width: 700
-        height: 700
+        x: 1398
+        y: 2
+        width: 699
+        height: 699
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,34 +382,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: green_idyll_tilemap_13
-      rect:
-        serializedVersion: 2
-        x: 4200
-        y: 0
-        width: 700
-        height: 700
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b98422408a630030800000000000000
-      internalID: 3459726037848721842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: green_idyll_tilemap_14
       rect:
         serializedVersion: 2
-        x: 4900
-        y: 0
+        x: 4194
+        y: 2
         width: 699
-        height: 700
+        height: 699
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -421,10 +406,10 @@ TextureImporter:
       name: green_idyll_tilemap_15
       rect:
         serializedVersion: 2
-        x: 4900
-        y: 700
+        x: 4893
+        y: 2
         width: 699
-        height: 700
+        height: 699
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -434,6 +419,27 @@ TextureImporter:
       bones: []
       spriteID: cc76cff8ed216d8d0800000000000000
       internalID: -2822047369393313844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_idyll_tilemap_11
+      rect:
+        serializedVersion: 2
+        x: 2097
+        y: 2
+        width: 699
+        height: 699
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ad8cd9068afd0c0800000000000000
+      internalID: -4548731965703398853
       vertices: []
       indices: 
       edges: []
