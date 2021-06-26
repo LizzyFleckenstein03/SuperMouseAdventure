@@ -11,6 +11,9 @@ public class Boss : MonoBehaviour
     [SerializeField]
     Text bossText;
 
+    [SerializeField]
+    GameObject bossTriggerObj;
+
     BossTrigger bossTrigger;
 
     public int bossHealth;
@@ -23,7 +26,7 @@ public class Boss : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bossTrigger = GetComponent<BossTrigger>();
+        bossTrigger = bossTriggerObj.GetComponent<BossTrigger>();
     }
 
     // Update is called once per frame
@@ -33,7 +36,6 @@ public class Boss : MonoBehaviour
         {
             bossText.enabled = true;
             bossText.text = bossName;
-            //FindObjectOfType<AudioManager>().Play("snail_fight");
         } else
         {
             bossText.enabled = false;
@@ -82,7 +84,7 @@ public class Boss : MonoBehaviour
         }
     }
 
-    //Bei Ber?hrung mit der Schere oder der Maus wird die Gesundheit um 1 verringert
+    //Bei Beruehrung mit der Schere oder der Maus wird die Gesundheit um 1 verringert
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if(bossTrigger.bossFight == true)

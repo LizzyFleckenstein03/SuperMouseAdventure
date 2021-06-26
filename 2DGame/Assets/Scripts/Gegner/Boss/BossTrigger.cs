@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class BossTrigger : MonoBehaviour
 {
-    [SerializeField]
-    private Transform bossTrigger;
-
-    public Transform mouse;
-
     public bool bossFight;
 
-    private void Update()
+    BoxCollider2D boxCollider2D;
+
+    private void Start()
     {
-        if(mouse.transform.position.x > bossTrigger.position.x)
-        {
-            bossFight = true;
-        }
+        boxCollider2D = GetComponent<BoxCollider2D>();
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        bossFight = true;
+        FindObjectOfType<AudioManager>().Stop("flowers");
+        FindObjectOfType<AudioManager>().Play("snail_fight");
+
+        boxCollider2D.enabled = false;
     }
 }
