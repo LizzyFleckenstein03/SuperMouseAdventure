@@ -15,10 +15,13 @@ public class BossTrigger : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        bossFight = true;
-        FindObjectOfType<AudioManager>().Stop("flowers");
-        FindObjectOfType<AudioManager>().Play("snail_fight");
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            bossFight = true;
+            FindObjectOfType<AudioManager>().Stop("flowers");
+            FindObjectOfType<AudioManager>().Play("snail_fight");
 
-        boxCollider2D.enabled = false;
+            boxCollider2D.enabled = false;
+        }
     }
 }

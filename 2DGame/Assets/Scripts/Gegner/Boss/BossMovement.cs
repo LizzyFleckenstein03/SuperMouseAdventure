@@ -5,12 +5,11 @@ using UnityEngine;
 public class BossMovement : StateMachineBehaviour
 {
     public float speed = 4.5f;
-    public float attackRange = 1f;
+    public float attackRange = 3f;
     
     Transform player;
     Rigidbody2D rb;
     BossDirection boss;
-    BossTrigger bossTrigger;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -18,7 +17,6 @@ public class BossMovement : StateMachineBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = animator.GetComponent<Rigidbody2D>();
         boss = animator.GetComponent<BossDirection>();
-        bossTrigger = animator.GetComponent<BossTrigger>();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
