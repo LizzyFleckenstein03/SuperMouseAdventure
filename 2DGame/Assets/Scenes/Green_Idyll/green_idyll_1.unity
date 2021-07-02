@@ -301,7 +301,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 61187373}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 844.5, y: -37.4, z: 0}
+  m_LocalPosition: {x: 844.5, y: -25.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2919,8 +2919,8 @@ MonoBehaviour:
   bossName: Schnecke
   bossText: {fileID: 1350018457}
   bossTriggerObj: {fileID: 1735132467}
-  bossHealth: 20
-  numberOfHearts: 20
+  bossHealth: 12
+  numberOfHearts: 12
   bossHearts:
   - {fileID: 1400477798}
   - {fileID: 194630536}
@@ -2933,14 +2933,6 @@ MonoBehaviour:
   - {fileID: 1120992168}
   - {fileID: 506468296}
   - {fileID: 270560371}
-  - {fileID: 1605026745}
-  - {fileID: 1605026745}
-  - {fileID: 1605026745}
-  - {fileID: 1605026745}
-  - {fileID: 1605026745}
-  - {fileID: 1605026745}
-  - {fileID: 1605026745}
-  - {fileID: 1605026745}
   - {fileID: 1605026745}
   fullHeart: {fileID: 21300000, guid: ed62606c8884d0c4f98cec1aced88bc2, type: 3}
   emptyHeart: {fileID: 21300000, guid: f0a4f4e3dcd85cb4cba379c2b8452f70, type: 3}
@@ -12920,7 +12912,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936765968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 725.5, y: 5.4, z: 0}
+  m_LocalPosition: {x: 725.27, y: 4.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 972365582}
@@ -12945,7 +12937,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 4.98}
+    oldSize: {x: 7.42, y: 7.39}
     newSize: {x: 7.42, y: 7.39}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -13892,7 +13884,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016078926}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 156.5, y: -13, z: 0}
+  m_LocalPosition: {x: 156.5, y: -1.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
