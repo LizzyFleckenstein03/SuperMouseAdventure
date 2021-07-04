@@ -56,6 +56,7 @@ public class Health : MonoBehaviour
         if(collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Boss"))
         {
             mouseHealth--;
+            invincible = true;
             powerUps.mouseIsGardener = false;
         }
     }
