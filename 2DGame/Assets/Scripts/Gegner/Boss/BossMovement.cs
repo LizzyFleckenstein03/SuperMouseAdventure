@@ -5,30 +5,24 @@ using UnityEngine;
 public class BossMovement : StateMachineBehaviour
 {
     public float speed = 4.5f;
-    public float attackRange = 4f;
+    public float attackRange = 22f;
     
     Transform player;
     Rigidbody2D rb;
-    BossDirection boss;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = animator.GetComponent<Rigidbody2D>();
-        boss = animator.GetComponent<BossDirection>();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        boss.LookAtPlayer();
-        
-        Vector2 target = new Vector2(player.position.x, rb.position.y);
-        Vector2 newPos = Vector2.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
-        rb.MovePosition(newPos);
+        Debug.Log(Vector2.Distance(rb.position, player.position));
 
-        if(Vector2.Distance(player.position, rb.position) <= attackRange)
+        if (Vector2.Distance(rb.position, player.position) <= attackRange)
         {
             animator.SetTrigger("Attack");
         }

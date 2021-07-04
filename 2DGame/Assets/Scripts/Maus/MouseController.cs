@@ -42,7 +42,7 @@ public class MouseController : MonoBehaviour
 
         checkpoint = GetComponent<Checkpoint>();
 
-        transform.position = checkpoint.CheckPoints[0].transform.position;
+        transform.position = checkpoint.CheckPoints[5].transform.position;
     }
 
     // Update is called once per frame

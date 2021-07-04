@@ -48,7 +48,7 @@ public class FollowPlayer : MonoBehaviour
             rb.velocity = new Vector2(MoveSpeed, 0);
 
             //Gegner wird der Bewegung entsprechend gedreht
-            transform.localScale = new Vector2(1, 1);
+            transform.localScale = new Vector2(-1, 1);
         }
         else if(transform.position.x > player.position.x)
         {
@@ -56,7 +56,7 @@ public class FollowPlayer : MonoBehaviour
             rb.velocity = new Vector2(-MoveSpeed, 0);
 
             //Gegner wird der Bewegung entsprechend gedreht
-            transform.localScale = new Vector2(-1, 1);
+            transform.localScale = new Vector2(1, 1);
         }
     }
 

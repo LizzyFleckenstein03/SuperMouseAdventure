@@ -14,6 +14,8 @@ public class Health : MonoBehaviour
 
     PowerUps powerUps;
 
+    public bool invincible;
+
     private void Start()
     {
         powerUps = GetComponent<PowerUps>();
