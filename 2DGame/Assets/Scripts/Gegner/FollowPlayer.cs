@@ -10,11 +10,12 @@ public class FollowPlayer : MonoBehaviour
     [SerializeField]
     Transform player;
 
-    [SerializeField]
-    private float agroRange;
+    public float agroRange;
 
     [SerializeField]
     private float MoveSpeed;
+
+    public float distToPlayer;
 
     Rigidbody2D rb;
 
@@ -28,7 +29,7 @@ public class FollowPlayer : MonoBehaviour
     void Update()
     {
         //Abstand zur Spielfigur
-        float distToPlayer = Vector2.Distance(transform.position, player.position);
+        distToPlayer = Vector2.Distance(transform.position, player.position);
 
         if(distToPlayer < agroRange)
         {
@@ -37,7 +38,6 @@ public class FollowPlayer : MonoBehaviour
         {
             StopChasingPlayer();
         }
-
     }
 
     void ChasePlayer()

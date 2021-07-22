@@ -3,26 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BossMovement : StateMachineBehaviour
-{
-    public float speed = 4.5f;
-    public float attackRange = 22f;
-    
-    Transform player;
-    Rigidbody2D rb;
+{   
+    FollowPlayer fp;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        rb = animator.GetComponent<Rigidbody2D>();
+        fp = animator.GetComponent<FollowPlayer>();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        Debug.Log(Vector2.Distance(rb.position, player.position));
-
-        if (Vector2.Distance(rb.position, player.position) <= attackRange)
+        if (fp.distToPlayer < fp.agroRange - 20)
         {
             animator.SetTrigger("Attack");
         }
