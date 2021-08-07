@@ -5,8 +5,12 @@ using UnityEngine;
 public class InvincibilityFrames : MonoBehaviour
 {
     SpriteRenderer spriteRenderer;
-
     Health health;
+
+    public bool invincible;
+
+    public float invincibilityFramesNumber = 2;
+    private float invincibilityFrames;
 
     // Start is called before the first frame update
     void Start()
@@ -18,9 +22,20 @@ public class InvincibilityFrames : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(health.invincible == true)
+        if(invincible == true)
         {
-
+            invincibilityFrames = invincibilityFramesNumber;
+            invincibilityFrames -= Time.deltaTime;
+            if(invincibilityFrames > 0)
+            {
+                invincible = true;
+            }
+            if (invincibilityFrames == 0)
+            {
+                invincible = false;
+            }
         }
+
+        print(invincible);
     }
 }

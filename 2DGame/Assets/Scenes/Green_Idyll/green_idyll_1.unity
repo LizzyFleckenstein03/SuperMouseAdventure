@@ -12734,6 +12734,7 @@ GameObject:
   - component: {fileID: 936765979}
   - component: {fileID: 936765980}
   - component: {fileID: 936765981}
+  - component: {fileID: 936765982}
   m_Layer: 0
   m_Name: maus
   m_TagString: Player
@@ -13169,7 +13170,6 @@ MonoBehaviour:
   - {fileID: 397286150}
   fullHeart: {fileID: 21300000, guid: 46a74d1428d29c342a3d11cb96df7622, type: 3}
   emptyHeart: {fileID: 21300000, guid: f0a4f4e3dcd85cb4cba379c2b8452f70, type: 3}
-  invincible: 0
 --- !u!114 &936765977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13250,6 +13250,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelGeschafft: {fileID: 423319633}
+--- !u!114 &936765982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936765968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24ecf8abffd3176449dbce52b3f21663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invincible: 0
+  invincibilityFramesNumber: 4
 --- !u!95 &936765983
 Animator:
   serializedVersion: 3
