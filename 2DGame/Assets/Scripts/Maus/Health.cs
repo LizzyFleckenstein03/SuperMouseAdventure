@@ -12,14 +12,9 @@ public class Health : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
-    PowerUps powerUps;
-
-    InvincibilityFrames invincibility;
-
     private void Start()
     {
-        powerUps = GetComponent<PowerUps>();
-        invincibility = GetComponent<InvincibilityFrames>();
+
     }
 
     // Update is called once per frame
@@ -51,22 +46,9 @@ public class Health : MonoBehaviour
         }
     }
 
-    //Bei Ber?hrung mit einem Gegner wird die Gesundheit um 1 verringert
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void GetDamage(int enemyDamage)
     {
-        if(collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Boss") && invincibility == false)
-        {
-            mouseHealth--;
-            powerUps.mouseIsGardener = false;
-            invincibility.invincible = true;
-        }
-
-        if(invincibility.invincible == true)
-        {
-            if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Boss"))
-            {
-                Physics2D.IgnoreCollision(collision.collider, collision.collider);
-            }
-        }
+        //Bei Ber?hrung mit einem Gegner wird die Gesundheit um 1 verringert
+        mouseHealth-=enemyDamage;
     }
 }

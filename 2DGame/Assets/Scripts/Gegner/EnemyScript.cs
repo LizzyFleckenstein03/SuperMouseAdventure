@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemyScript : MonoBehaviour
 {
-    [SerializeField]
-    int enemyHealth;
+    public int enemyHealth;
+    public int enemyDamage;
 
     // Update is called once per frame
     void Update()
