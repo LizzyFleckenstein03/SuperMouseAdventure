@@ -17,11 +17,8 @@ public class EnemyCollision : MonoBehaviour
 
     EnemyScript eS;
 
-    public float invincibilityFrames;
-
-    private Color startSpriteColor;
-    private Color startTrailColor;
-    Color color;
+    private float invincibilityFrames;
+    public float startInvincibilityFrames = 0.2f;
     
     private bool invulnerable = false;
 
@@ -33,16 +30,14 @@ public class EnemyCollision : MonoBehaviour
         powerUps = mouse.GetComponent<PowerUps>();
         health = mouse.GetComponent<Health>();
         eS = GetComponent<EnemyScript>();
-
-        startSpriteColor = spriteRenderer.material.color;
-        startTrailColor = trailRenderer.material.color;
-
+        invincibilityFrames = startInvincibilityFrames;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        print(invincibilityFrames);
+        print(invulnerable);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -59,13 +54,20 @@ public class EnemyCollision : MonoBehaviour
     {
         invulnerable = true;
         Physics2D.IgnoreLayerCollision(7, 8, true);
-        color.a = 0.5f;
-        spriteRenderer.material.color = color;
-        trailRenderer.material.color = color;
-        yield return new WaitForSeconds(invincibilityFrames);
+        while (invincibilityFrames > 0)
+        {
+            invincibilityFrames -= Time.deltaTime;
+            spriteRenderer.enabled = false;
+            trailRenderer.enabled = false;
+            yield return new WaitForSeconds(0.3f);
+            spriteRenderer.enabled = true;
+            trailRenderer.enabled = true;
+            yield return new WaitForSeconds(0.3f);
+        }
         Physics2D.IgnoreLayerCollision(7, 8, false);
-        spriteRenderer.material.color = startSpriteColor;
-        trailRenderer.material.color = startTrailColor;
+        spriteRenderer.enabled = true;
+        trailRenderer.enabled = true;
+        invincibilityFrames = startInvincibilityFrames;
         invulnerable = false;
     }
 }
