@@ -17,8 +17,7 @@ public class EnemyCollision : MonoBehaviour
 
     EnemyScript eS;
 
-    private float invincibilityFrames;
-    public float startInvincibilityFrames = 0.2f;
+    public float flashingTime = 0.3f;
     
     private bool invulnerable = false;
 
@@ -30,14 +29,6 @@ public class EnemyCollision : MonoBehaviour
         powerUps = mouse.GetComponent<PowerUps>();
         health = mouse.GetComponent<Health>();
         eS = GetComponent<EnemyScript>();
-        invincibilityFrames = startInvincibilityFrames;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        print(invincibilityFrames);
-        print(invulnerable);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -46,6 +37,7 @@ public class EnemyCollision : MonoBehaviour
         {
             powerUps.mouseIsGardener = false;
             health.GetDamage(eS.enemyDamage);
+            FindObjectOfType<AudioManager>().Play("drsh");
             StartCoroutine ("GetInvincible");
         }
     }
@@ -54,20 +46,18 @@ public class EnemyCollision : MonoBehaviour
     {
         invulnerable = true;
         Physics2D.IgnoreLayerCollision(7, 8, true);
-        while (invincibilityFrames > 0)
+        for (int i = 0; i < 4; i++)
         {
-            invincibilityFrames -= Time.deltaTime;
             spriteRenderer.enabled = false;
             trailRenderer.enabled = false;
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(flashingTime);
             spriteRenderer.enabled = true;
             trailRenderer.enabled = true;
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(flashingTime);
         }
         Physics2D.IgnoreLayerCollision(7, 8, false);
         spriteRenderer.enabled = true;
         trailRenderer.enabled = true;
-        invincibilityFrames = startInvincibilityFrames;
         invulnerable = false;
     }
 }

@@ -21,6 +21,8 @@ public class Cheese : MonoBehaviour
 
             SetCountText();
 
+            FindObjectOfType<AudioManager>().Play("cheese_plop");
+
             collision.gameObject.SetActive(false);
         }
     }
