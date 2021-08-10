@@ -6,6 +6,9 @@ public class Checkpoint : MonoBehaviour
 {
     private CheckpointManager cm;
 
+    public Sprite red;
+    public Sprite green;
+
     void Start()
     {
         cm = GameObject.FindGameObjectWithTag("CheckpointManager").GetComponent<CheckpointManager>();
@@ -16,6 +19,7 @@ public class Checkpoint : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             cm.lastCheckpointPos = transform.position;
+            GetComponent<SpriteRenderer>().sprite = green;
         }
     }
 }

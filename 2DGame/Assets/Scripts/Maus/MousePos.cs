@@ -7,18 +7,24 @@ public class MousePos : MonoBehaviour
 {
     private CheckpointManager checkpointManager;
 
+    Abyss abyss;
+
+    Health health;
+
     // Start is called before the first frame update
     void Start()
     {
-        checkpointManager = GameObject.FindGameObjectWithTag("Checkpointmanager").GetComponent<CheckpointManager>();
+        checkpointManager = GameObject.FindGameObjectWithTag("CheckpointManager").GetComponent<CheckpointManager>();
+        abyss = GetComponent<Abyss>();
+        health = GetComponent<Health>();
         transform.position = checkpointManager.lastCheckpointPos;
     }
 
     void Update()
     {
-        /**if()
+        if(abyss.fallenDown || health.mouseHealth <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }*/
+        }
     }
 }
