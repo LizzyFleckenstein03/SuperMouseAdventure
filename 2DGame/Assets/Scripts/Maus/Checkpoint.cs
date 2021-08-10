@@ -4,58 +4,18 @@ using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
 {
-    public GameObject[] CheckPoints;
+    private CheckpointManager cm;
 
-    public GameObject Mouse;
-
-    private Abyss abyss;
-    private Health health;
-
-    [HideInInspector]
-    public bool reset;
-
-    // Start is called before the first frame update
     void Start()
     {
-        abyss = GetComponent<Abyss>();
-        health = GetComponent<Health>();
+        cm = GameObject.FindGameObjectWithTag("CheckpointManager").GetComponent<CheckpointManager>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (abyss.fallenDown == true || health.mouseHealth == 0)
+        if(collision.CompareTag("Player"))
         {
-            reset = true;
-        }
-
-        if (reset == true)
-        {
-            for (int i = 0; i < CheckPoints.Length; i++)
-            {
-                if (CheckPoints[i].transform.position.x <= Mouse.transform.position.x && CheckPoints[i + 1].transform.position.x >= Mouse.transform.position.x && CheckPoints[CheckPoints.Length-1].transform.position.x > Mouse.transform.position.x)
-                {
-                    Mouse.transform.position = CheckPoints[i].transform.position;
-                }
-                else if (CheckPoints[0].transform.position.x >= Mouse.transform.position.x)
-                {
-                    Mouse.transform.position = CheckPoints[0].transform.position;
-                }
-                else if (CheckPoints[CheckPoints.Length - 1].transform.position.x <= Mouse.transform.position.x)
-                {
-                    Mouse.transform.position = CheckPoints[CheckPoints.Length - 1].transform.position;
-                }
-
-                if (Mouse.transform.position == CheckPoints[i].transform.position || Mouse.transform.position == CheckPoints[CheckPoints.Length - 1].transform.position)
-                {
-                    reset = false;
-                    abyss.fallenDown = false;
-                    if(health.mouseHealth == 0)
-                    {
-                        health.mouseHealth = 5;
-                    }
-                }
-            }
+            cm.lastCheckpointPos = transform.position;
         }
     }
 }

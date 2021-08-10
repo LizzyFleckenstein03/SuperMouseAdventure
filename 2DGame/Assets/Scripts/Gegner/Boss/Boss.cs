@@ -94,10 +94,6 @@ public class Boss : MonoBehaviour
                 bossHealth--;
                 Destroy(collision.gameObject);
             }
-            else if (collision.gameObject.CompareTag("Player"))
-            {
-                bossHealth--;
-            }
         }
     }
 }

@@ -30,8 +30,6 @@ public class MouseController : MonoBehaviour
     [SerializeField]
     private float shootDelay = 0.5f;
 
-    Checkpoint checkpoint;
-
     // Start is called before the first frame update
     void Start()
     {   
@@ -39,10 +37,6 @@ public class MouseController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         powerUps = GetComponent<PowerUps>();
-
-        checkpoint = GetComponent<Checkpoint>();
-
-        transform.position = checkpoint.CheckPoints[0].transform.position;
     }
 
     // Update is called once per frame
@@ -98,11 +92,6 @@ public class MouseController : MonoBehaviour
         }
 
         moveInput = Input.GetAxisRaw("Horizontal");
-
-        if(moveInput == 0)
-        {
-
-        }
     }
 
     void FixedUpdate() 

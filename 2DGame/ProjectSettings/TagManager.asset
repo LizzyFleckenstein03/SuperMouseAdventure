@@ -13,7 +13,7 @@ TagManager:
   - Heart
   - Bullet
   - Boss
-  - Mouse
+  - CheckpointManager
   layers:
   - Default
   - TransparentFX
