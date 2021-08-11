@@ -690,6 +690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!1 &122693115
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,6 +723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &122693117
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -845,6 +847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &169132383
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1143,6 +1146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &207715973
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1266,6 +1270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &211959829
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1389,6 +1394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &212641689
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1636,6 +1642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &242491969
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3046,6 +3053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &402974667
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3483,6 +3491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &431977560
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4393,6 +4402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &518388258
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4897,6 +4907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &637257606
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5217,6 +5228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &695689561
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5489,6 +5501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &711845147
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11066,6 +11079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &763684427
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11338,6 +11352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &796706473
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11618,6 +11633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &832627527
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12005,6 +12021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &887776281
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12203,6 +12220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &921592785
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12326,6 +12344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &923355516
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12727,7 +12746,7 @@ MonoBehaviour:
   checkRadius: 0.5
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   isFacingLeft: 0
   bullet: {fileID: 688537813372253691, guid: b6071fc8cbeb9e443b6f4357df600e15, type: 3}
   bulletSpawnPos: {fileID: 722593448}
@@ -12852,6 +12871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!114 &936765976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14045,6 +14065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1024711149
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14519,6 +14540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1120353492
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24935,6 +24957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1248115350
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25167,6 +25190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1332937277
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25290,6 +25314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1349961928
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25655,6 +25680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1413653026
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25789,7 +25815,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 735e97089dfbe134483f6327a5a31fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastCheckpointPos: {x: 0, y: 0}
+  lastCheckpointPos: {x: 0, y: 0, z: 0}
+  cheese: {fileID: 0}
+  lastCheeseCount: 0
+  mouse: {fileID: 0}
 --- !u!1 &1423339812
 GameObject:
   m_ObjectHideFlags: 0
@@ -26923,6 +26952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1516204024
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27134,6 +27164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1540963746
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27636,6 +27667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1563690198
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27759,6 +27791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1574157853
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28156,6 +28189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1680494562
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28279,6 +28313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1692771182
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28551,6 +28586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1717582839
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28775,6 +28811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1767765326
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29371,6 +29408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1809534811
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29494,6 +29532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1817527323
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29756,6 +29795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1858170493
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29985,6 +30025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1908351765
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30108,6 +30149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1914942132
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30231,6 +30273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1938402224
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30354,6 +30397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1949337873
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30477,6 +30521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1950952710
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30630,6 +30675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1962902661
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30753,6 +30799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
+  cheesecount: 0
 --- !u!61 &1981289148
 BoxCollider2D:
   m_ObjectHideFlags: 0
