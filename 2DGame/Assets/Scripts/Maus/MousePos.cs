@@ -7,6 +7,8 @@ public class MousePos : MonoBehaviour
 {
     private CheckpointManager checkpointManager;
 
+    private Cheese cheese;
+
     Abyss abyss;
 
     Health health;
@@ -17,7 +19,9 @@ public class MousePos : MonoBehaviour
         checkpointManager = GameObject.FindGameObjectWithTag("CheckpointManager").GetComponent<CheckpointManager>();
         abyss = GetComponent<Abyss>();
         health = GetComponent<Health>();
+        cheese = GetComponent<Cheese>();
         transform.position = checkpointManager.lastCheckpointPos;
+        cheese.cheesecount = checkpointManager.lastCheeseCount;
     }
 
     void Update()

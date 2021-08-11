@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class Cheese : MonoBehaviour
 {
     public Text countText;
-    private int cheesecount;
+    
+    [HideInInspector]
+    public int cheesecount;
 
     void Start()
     {
@@ -27,7 +29,7 @@ public class Cheese : MonoBehaviour
         }
     }
 
-    void SetCountText()
+    public void SetCountText()
     {
         countText.text = cheesecount.ToString();
     }
