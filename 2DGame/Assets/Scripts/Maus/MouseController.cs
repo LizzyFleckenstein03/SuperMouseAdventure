@@ -1,4 +1,5 @@
 //Mit diesem Script kann man die Maus steuern.
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -42,23 +43,6 @@ public class MouseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isGrounded == true && Input.GetButtonDown("Jump"))
-        {
-            isJumping = true;
-            jumpTimeCounter = jumptime;
-            rb.velocity = Vector2.up * jumpForce;
-        }
-
-        if (Input.GetButton("Jump") && isJumping == true)
-        {
-            if (jumpTimeCounter > 0)
-            {
-                rb.velocity = Vector2.up * jumpForce;
-                jumpTimeCounter -= Time.deltaTime;
-                FindObjectOfType<AudioManager>().Play("sprung");
-            }
-        }
-
         if (Input.GetButtonUp("Jump"))
         {
             isJumping = false;
@@ -94,13 +78,71 @@ public class MouseController : MonoBehaviour
         moveInput = Input.GetAxisRaw("Horizontal");
     }
 
+    bool HasReachedTV(float acceleration)
+    {
+		if (acceleration < 0)
+		{
+			if (rb.velocity.x <= -speed)
+				return true;
+		}
+		else if (acceleration > 0)
+		{
+			if (rb.velocity.x >= speed)
+				return true;
+		}
+
+		return false;
+	}
+
     void FixedUpdate()
     {
-        //Hier wird ein Kreis unter der Maus erzeugt, der prüft, ob die Maus den Boden berührt
+		 //Hier wird ein Kreis unter der Maus erzeugt, der prüft, ob die Maus den Boden berührt
         isGrounded = Physics2D.OverlapCircle(groundcheck.position, checkRadius, whatIsGround);
 
-        //Wenn a und d oder Pfeiltaste links und rechts gedrückt werden, ist der Wert von moveInput -1 oder 1;
-        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+		//Wenn a und d oder Pfeiltaste links und rechts gedrückt werden, ist der Wert von moveInput -1 oder 1;
+
+		float acceleration = speed;
+
+		if (moveInput != 0)
+		{
+			acceleration *= moveInput * 4;
+		}
+		else if (isGrounded)
+		{
+			acceleration *= -Math.Sign(rb.velocity.x) * 16;
+		}
+		else
+		{
+			acceleration = 0;
+		}
+
+		if (! HasReachedTV(acceleration))
+		{
+			int oldSign = Math.Sign(rb.velocity.x);
+			rb.velocity += new Vector2(acceleration * Time.fixedDeltaTime, 0);
+
+			if (HasReachedTV(acceleration))
+				rb.velocity = new Vector2(Math.Sign(rb.velocity.x) * speed, rb.velocity.y);
+			if (oldSign == -Math.Sign(rb.velocity.x))
+				rb.velocity = new Vector2(0, rb.velocity.y);
+		}
+
+        if (isGrounded == true && Input.GetButtonDown("Jump"))
+        {
+            isJumping = true;
+            jumpTimeCounter = jumptime;
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        }
+
+        if (Input.GetButton("Jump") && isJumping == true)
+        {
+            if (jumpTimeCounter > 0)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                jumpTimeCounter -= Time.fixedDeltaTime;
+                FindObjectOfType<AudioManager>().Play("sprung");
+            }
+        }
     }
 
     void ResetShoot()

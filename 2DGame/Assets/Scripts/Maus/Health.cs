@@ -12,15 +12,10 @@ public class Health : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
-    private void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
-        if(mouseHealth > numberOfHearts)
+        if (mouseHealth > numberOfHearts)
         {
             mouseHealth = numberOfHearts;
         }
@@ -28,7 +23,7 @@ public class Health : MonoBehaviour
         for (int i = 0; i < hearts.Length; i++)
         {
             //Wenn i kleiner als die Gesundheit, zeige ein volles Herz an, ansonsten ein leeres
-            if(i < mouseHealth)
+            if (i < mouseHealth)
             {
                 hearts[i].sprite = fullHeart;
             } else
@@ -36,19 +31,20 @@ public class Health : MonoBehaviour
                 hearts[i].sprite = emptyHeart;
             }
 
-            if(i < numberOfHearts)
+            if (i < numberOfHearts)
             {
                 hearts[i].enabled = true;
-            } else
+            }
+            else
             {
                 hearts[i].enabled = false;
             }
         }
     }
 
-    public void GetDamage(int enemyDamage)
+    public void DealDamage(int enemyDamage)
     {
-        //Bei Ber?hrung mit einem Gegner wird die Gesundheit um 1 verringert
-        mouseHealth-=enemyDamage;
+        //Bei Beruehrung mit einem Gegner wird die Gesundheit um 1 verringert
+        mouseHealth -= enemyDamage;
     }
 }
