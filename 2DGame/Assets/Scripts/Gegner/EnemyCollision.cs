@@ -18,7 +18,7 @@ public class EnemyCollision : MonoBehaviour
     EnemyScript eS;
 
     public float flashingTime = 0.3f;
-    
+
     private bool invulnerable = false;
 
     // Start is called before the first frame update
@@ -36,7 +36,17 @@ public class EnemyCollision : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && invulnerable == false)
         {
             powerUps.mouseIsGardener = false;
-            health.GetDamage(eS.enemyDamage);
+            health.DealDamage(eS.enemyDamage);
+
+            Vector2 mousePos = collision.gameObject.GetComponent<Transform>().position;
+            Vector2 enemyPos = GetComponent<Transform>().position;
+
+            Vector2 knockback = mousePos - enemyPos;
+            knockback.Normalize();
+            knockback *= eS.enemyDamage * 100;
+
+            collision.gameObject.GetComponent<Rigidbody2D>().velocity += knockback;
+
             FindObjectOfType<AudioManager>().Play("drsh");
             StartCoroutine ("GetInvincible");
         }
