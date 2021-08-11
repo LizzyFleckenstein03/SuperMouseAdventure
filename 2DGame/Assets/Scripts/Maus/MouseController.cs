@@ -43,6 +43,23 @@ public class MouseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		if (isGrounded == true && Input.GetButtonDown("Jump"))
+        {
+            isJumping = true;
+            jumpTimeCounter = jumptime;
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        }
+
+        if (Input.GetButton("Jump") && isJumping == true)
+        {
+            if (jumpTimeCounter > 0)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                jumpTimeCounter -= Time.deltaTime;
+                FindObjectOfType<AudioManager>().Play("sprung");
+            }
+        }
+
         if (Input.GetButtonUp("Jump"))
         {
             isJumping = false;
@@ -61,14 +78,12 @@ public class MouseController : MonoBehaviour
 
         if (powerUps.mouseIsGardener == true)
         {
-            if (Input.GetButtonDown("Fire1"))
+            if (Input.GetButtonDown("Fire1") && ! isShooting)
             {
-                if (isShooting) return;
-
                 isShooting = true;
 
                 GameObject b = Instantiate(bullet);
-                b.GetComponent<Scissors>().StartShoot(isFacingLeft);
+                b.GetComponent<Scissors>().StartShoot(isFacingLeft, rb.velocity);
                 b.transform.position = bulletSpawnPos.transform.position;
 
                 Invoke("ResetShoot", shootDelay);
@@ -126,23 +141,6 @@ public class MouseController : MonoBehaviour
 			if (oldSign == -Math.Sign(rb.velocity.x))
 				rb.velocity = new Vector2(0, rb.velocity.y);
 		}
-
-        if (isGrounded == true && Input.GetButtonDown("Jump"))
-        {
-            isJumping = true;
-            jumpTimeCounter = jumptime;
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-        }
-
-        if (Input.GetButton("Jump") && isJumping == true)
-        {
-            if (jumpTimeCounter > 0)
-            {
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-                jumpTimeCounter -= Time.fixedDeltaTime;
-                FindObjectOfType<AudioManager>().Play("sprung");
-            }
-        }
     }
 
     void ResetShoot()
