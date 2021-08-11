@@ -12,7 +12,7 @@ public class EnemyScript : MonoBehaviour
     {
         if (enemyHealth <= 0)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 
