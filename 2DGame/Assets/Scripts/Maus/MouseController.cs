@@ -20,7 +20,7 @@ public class MouseController : MonoBehaviour
     PowerUps powerUps;
 
     public bool isFacingLeft;
-    
+
     private bool isShooting;
 
     [SerializeField]
@@ -32,7 +32,7 @@ public class MouseController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {   
+    {
         //Hier wird der Rigidbody initialisiert
         rb = GetComponent<Rigidbody2D>();
 
@@ -42,7 +42,7 @@ public class MouseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isGrounded == true && Input.GetButtonDown("Jump"))
+        if (isGrounded == true && Input.GetButtonDown("Jump"))
         {
             isJumping = true;
             jumpTimeCounter = jumptime;
@@ -51,7 +51,7 @@ public class MouseController : MonoBehaviour
 
         if (Input.GetButton("Jump") && isJumping == true)
         {
-            if(jumpTimeCounter > 0)
+            if (jumpTimeCounter > 0)
             {
                 rb.velocity = Vector2.up * jumpForce;
                 jumpTimeCounter -= Time.deltaTime;
@@ -75,7 +75,7 @@ public class MouseController : MonoBehaviour
             isFacingLeft = false;
         }
 
-        if(powerUps.mouseIsGardener == true)
+        if (powerUps.mouseIsGardener == true)
         {
             if (Input.GetButtonDown("Fire1"))
             {
@@ -94,14 +94,14 @@ public class MouseController : MonoBehaviour
         moveInput = Input.GetAxisRaw("Horizontal");
     }
 
-    void FixedUpdate() 
+    void FixedUpdate()
     {
         //Hier wird ein Kreis unter der Maus erzeugt, der prüft, ob die Maus den Boden berührt
         isGrounded = Physics2D.OverlapCircle(groundcheck.position, checkRadius, whatIsGround);
 
         //Wenn a und d oder Pfeiltaste links und rechts gedrückt werden, ist der Wert von moveInput -1 oder 1;
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
-    } 
+    }
 
     void ResetShoot()
     {
