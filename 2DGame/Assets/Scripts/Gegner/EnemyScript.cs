@@ -14,7 +14,10 @@ public class EnemyScript : MonoBehaviour
     {
         if (enemyHealth <= 0)
         {
-            gameObject.SetActive(false);
+            GetComponent<Collider2D>().enabled = false;
+            GetComponent<FollowPlayer>().enabled = false;
+            GetComponent<Rigidbody2D>().gravityScale = 10;
+            Destroy(gameObject, 2);
         }
     }
 }

@@ -14,7 +14,7 @@ public class JumpOnEnemies : MonoBehaviour
 
             if(!enemyScript.spiky)
             {
-                enemyScript.enemyHealth -= 1;
+            enemyScript.enemyHealth -= 1;
             }
         }
     }
