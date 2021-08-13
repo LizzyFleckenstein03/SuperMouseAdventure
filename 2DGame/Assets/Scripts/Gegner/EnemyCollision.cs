@@ -43,7 +43,7 @@ public class EnemyCollision : MonoBehaviour
 
             Vector2 knockback = mousePos - enemyPos;
             knockback.Normalize();
-            knockback *= eS.enemyDamage * 100;
+            knockback *= eS.enemyDamage * 36;
 
             collision.gameObject.GetComponent<Rigidbody2D>().velocity += knockback;
 

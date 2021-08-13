@@ -9,7 +9,7 @@ public class Scissors : MonoBehaviour
     float speed;
 
     [SerializeField]
-    float lifeTime = 10;
+    float lifeTime;
 
     public void StartShoot(bool isFacingLeft, Vector2 velocity)
     {
