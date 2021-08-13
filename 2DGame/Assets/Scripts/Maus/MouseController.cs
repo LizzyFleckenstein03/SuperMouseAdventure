@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class MouseController : MonoBehaviour
 {
     Rigidbody2D rb;
@@ -111,10 +112,10 @@ public class MouseController : MonoBehaviour
 
     void FixedUpdate()
     {
-		 //Hier wird ein Kreis unter der Maus erzeugt, der prüft, ob die Maus den Boden berührt
+		 //Hier wird ein Kreis unter der Maus erzeugt, der prueft, ob die Maus den Boden beruehrt
         isGrounded = Physics2D.OverlapCircle(groundcheck.position, checkRadius, whatIsGround);
 
-		//Wenn a und d oder Pfeiltaste links und rechts gedrückt werden, ist der Wert von moveInput -1 oder 1;
+		//Wenn a und d oder Pfeiltaste links und rechts gedrueckt werden, ist der Wert von moveInput -1 oder 1;
 
 		float acceleration = speed;
 

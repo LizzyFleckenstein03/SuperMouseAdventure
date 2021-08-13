@@ -39,7 +39,7 @@ public class EnemyCollision : MonoBehaviour
             health.DealDamage(eS.enemyDamage);
 
             Vector2 mousePos = collision.gameObject.GetComponent<Transform>().position;
-            Vector2 enemyPos = GetComponent<Transform>().position;
+            Vector2 enemyPos = transform.position;
 
             Vector2 knockback = mousePos - enemyPos;
             knockback.Normalize();
