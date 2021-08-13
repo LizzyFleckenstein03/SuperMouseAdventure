@@ -4,13 +4,13 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveSystem
 {
-    public static void SavePlayer (CheckpointManager cm, Cheese cheese)
+    public static void SavePlayer (CheckpointManager cm, Cheese cheese, CheeseCoin cheeseCoin)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/data.lol";
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        PlayerData data = new PlayerData(cm, cheese);
+        PlayerData data = new PlayerData(cm, cheese, cheeseCoin);
 
         formatter.Serialize(stream, data);
         stream.Close();

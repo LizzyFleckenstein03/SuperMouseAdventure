@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CheeseCoin : MonoBehaviour
 {
-    private bool cheeseCoinCollected;
+    public bool cheeseCoinCollected;
 
     public GameObject cheeseCoin;
      
@@ -22,7 +22,6 @@ public class CheeseCoin : MonoBehaviour
         }
         else
         {
-            //gibt eine NullReferenceException aus
             cheeseCoinImage.sprite = missingCheeseCoin;
         }
 

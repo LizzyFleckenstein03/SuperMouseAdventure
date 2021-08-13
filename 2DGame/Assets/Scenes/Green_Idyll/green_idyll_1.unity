@@ -2663,6 +2663,11 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     source: {fileID: 0}
+  - name: checkpoint
+    clip: {fileID: 8300000, guid: 8aec8274cc2da4671a712185e5f84971, type: 3}
+    volume: 0.2
+    pitch: 1
+    source: {fileID: 0}
 --- !u!4 &292106544
 Transform:
   m_ObjectHideFlags: 0

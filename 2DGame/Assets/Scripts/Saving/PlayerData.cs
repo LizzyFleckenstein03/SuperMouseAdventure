@@ -6,10 +6,12 @@ public class PlayerData
 {
     public float [] position;
     public int collectedCheese;
+    public bool isCheeseCoinCollected;
 
-    public PlayerData (CheckpointManager cm, Cheese cheese)
+    public PlayerData (CheckpointManager cm, Cheese cheese, CheeseCoin cheeseCoin)
     {
         collectedCheese = cheese.cheesecount;
+        isCheeseCoinCollected = cheeseCoin.cheeseCoinCollected;
         position = new float[3];
         position[0] = cm.lastCheckpointPos.x;
         position[1] = cm.lastCheckpointPos.y;

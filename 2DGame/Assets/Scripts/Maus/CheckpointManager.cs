@@ -5,10 +5,19 @@ using UnityEngine;
 public class CheckpointManager : MonoBehaviour
 {
     private static CheckpointManager instance;
+
     public Vector3 lastCheckpointPos;
-    public Cheese cheese;
-    public int lastCheeseCount;
+
+    Cheese cheese;
+
+    CheeseCoin cheeseCoin;
+
     public Transform mouse;
+
+    public int lastCheeseCount;
+
+    public bool isCheeseCoinCollected;
+
 
     void Awake()
     {
@@ -27,7 +36,7 @@ public class CheckpointManager : MonoBehaviour
 
     public void SavePlayer ()
     {
-        SaveSystem.SavePlayer(instance, cheese);
+        SaveSystem.SavePlayer(instance, cheese, cheeseCoin);
     }
 
     public void LoadPlayer()
@@ -35,6 +44,7 @@ public class CheckpointManager : MonoBehaviour
         PlayerData data = SaveSystem.LoadPlayer();
 
         cheese.cheesecount = data.collectedCheese;
+        cheeseCoin.cheeseCoinCollected = data.isCheeseCoinCollected;
 
         Vector3 position;
         position.x = data.position[0];
