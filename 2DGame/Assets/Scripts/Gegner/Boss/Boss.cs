@@ -87,7 +87,7 @@ public class Boss : MonoBehaviour
     //Bei Beruehrung mit der Schere oder der Maus wird die Gesundheit um 1 verringert
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(bossTrigger.bossFight == true)
+        if (bossTrigger.bossFight == true)
         {
             if (collision.gameObject.CompareTag("Bullet"))
             {
