@@ -17,7 +17,12 @@ public class BossMovement : StateMachineBehaviour
     {
         if (fp.distToPlayer < fp.agroRange - 20)
         {
+            animator.SetBool("Idle", false);
             animator.SetTrigger("Attack");
+        }
+        else if (fp.distToPlayer > fp.agroRange)
+        {
+            animator.SetBool("Idle", true);
         }
     }
 
@@ -25,5 +30,6 @@ public class BossMovement : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.ResetTrigger("Attack");
+        animator.SetBool("Idle", false);
     }
 }

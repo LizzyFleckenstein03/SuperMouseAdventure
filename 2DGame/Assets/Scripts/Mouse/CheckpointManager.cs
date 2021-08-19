@@ -8,6 +8,9 @@ public class CheckpointManager : MonoBehaviour
 
     public Vector3 lastCheckpointPos;
 
+    [SerializeField]
+    Transform firstCheckpoint;
+
     Cheese cheese;
 
     CheeseCoin cheeseCoin;
@@ -31,7 +34,11 @@ public class CheckpointManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    //cheese muss noch definiert werden
+
+    private void Start()
+    {
+        firstCheckpoint.position = mouse.position;
+    }
 
 
     public void SavePlayer ()
