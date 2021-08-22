@@ -6,7 +6,6 @@ public class PowerUps : MonoBehaviour
 {
     public GameObject gardenCheese;
     public SpriteRenderer mouseRenderer;
-    public Sprite gardenMouse;
 
     public bool mouseIsGardener;
 

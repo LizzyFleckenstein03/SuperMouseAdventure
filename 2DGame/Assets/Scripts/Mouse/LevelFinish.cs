@@ -12,7 +12,7 @@ public class LevelFinish : MonoBehaviour
     {
         if(collision.CompareTag("Finish"))
         {
-            levelGeschafft.text = "Level geschafft!";
+            //levelGeschafft.text = "Level geschafft!";
         }
     }
 }

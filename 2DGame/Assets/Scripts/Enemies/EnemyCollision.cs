@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyCollision : MonoBehaviour
 {
-    [SerializeField]
     GameObject mouse;
 
     SpriteRenderer spriteRenderer;
@@ -24,6 +23,7 @@ public class EnemyCollision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        mouse = GameObject.FindGameObjectWithTag("Player");
         spriteRenderer = mouse.GetComponent<SpriteRenderer>();
         trailRenderer = mouse.GetComponent<TrailRenderer>();
         powerUps = mouse.GetComponent<PowerUps>();
