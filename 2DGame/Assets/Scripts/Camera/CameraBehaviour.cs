@@ -8,7 +8,7 @@ public class CameraBehaviour : MonoBehaviour
     GameObject begrenzer;
 
     [SerializeField]
-    GameObject maus;
+    GameObject mouse;
 
     [SerializeField]
     Transform cameraLock;
@@ -19,9 +19,9 @@ public class CameraBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (maus.transform.position.x > begrenzer.transform.position.x)
+        if (mouse.transform.position.x > begrenzer.transform.position.x)
         {
-            transform.position = new Vector3(maus.transform.position.x, maus.transform.position.y, -10);
+            transform.position = new Vector3(mouse.transform.position.x, mouse.transform.position.y, -10);
             cameraLocked = false;
         }
         else
