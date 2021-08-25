@@ -2,13 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelSelection : MonoBehaviour
 {
     [SerializeField]
     Transform[] levels;
 
-    int[] scenes;
+    [SerializeField]
+    Text nameOfLevel;
+
+    [SerializeField]
+    string[] levelNames;
+
+    [SerializeField]
+    Text nameOfWorld;
+
+    [SerializeField]
+    string[] worldNames;
 
     private int level;
 
@@ -43,5 +54,6 @@ public class LevelSelection : MonoBehaviour
         }
 
         transform.position = levels[level].transform.position;
+        nameOfLevel.text = levelNames[level];
     }
 }
