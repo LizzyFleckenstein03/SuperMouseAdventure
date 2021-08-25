@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/level_selection.unity
+    guid: df75c663b11949c4e95567f58e162840
+  - enabled: 1
+    path: Assets/Scenes/(1) Green_Idyll/green_idyll_1.unity
+    guid: 2da5e8daf6d56594db892335cf0ea295
   m_configObjects: {}
