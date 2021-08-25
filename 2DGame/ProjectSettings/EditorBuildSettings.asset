@@ -11,4 +11,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/(1) Green_Idyll/green_idyll_1.unity
     guid: 2da5e8daf6d56594db892335cf0ea295
+  - enabled: 1
+    path: Assets/Scenes/(1) Green_Idyll/green_idyll_2.unity
+    guid: 5d0b78bc83068114c990b76581dfe90e
+  - enabled: 1
+    path: Assets/Scenes/(1) Green_Idyll/green_idyll_3.unity
+    guid: a669f50e706593f4896f10da8face891
+  - enabled: 1
+    path: Assets/Scenes/(1) Green_Idyll/green_idyll_4.unity
+    guid: 8e42d3756fba33c43980668de7e0be78
+  - enabled: 1
+    path: Assets/Scenes/(1) Green_Idyll/green_idyll_5.unity
+    guid: 50af261cf3d38864c9ec0a733c1acdfb
+  - enabled: 1
+    path: Assets/Scenes/(1) Green_Idyll/green_idyll_6.unity
+    guid: cbbcf74f0d48e2040a692104a8032dd5
+  - enabled: 1
+    path: Assets/Scenes/(1) Green_Idyll/green_idyll_7.unity
+    guid: d99457d5af858544fa06a0660ec9a835
+  - enabled: 1
+    path: Assets/Scenes/(1) Green_Idyll/green_idyll_8.unity
+    guid: d694c4b197cebcb4fb93c625c83439da
+  - enabled: 1
+    path: Assets/Scenes/(1) Green_Idyll/green_idyll_9.unity
+    guid: 8dd8491a5735db94b80db0253f473bd2
+  - enabled: 1
+    path: Assets/Scenes/(1) Green_Idyll/green_idyll_10.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
