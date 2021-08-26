@@ -5,6 +5,11 @@ using UnityEngine;
 public class JumpOnEnemies : MonoBehaviour
 {
     EnemyScript enemyScript;
+    
+    [SerializeField]
+    GameObject mouse;
+
+    public float knockBackValue = 30;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -16,6 +21,15 @@ public class JumpOnEnemies : MonoBehaviour
             {
             enemyScript.enemyHealth -= 1;
             }
+
+            Vector2 mousePos = mouse.transform.position;
+            Vector2 enemyPos = collision.gameObject.transform.position;
+
+            Vector2 knockback = mousePos - enemyPos;
+            knockback.Normalize();
+            knockback *= 36;
+
+            mouse.GetComponent<Rigidbody2D>().velocity += knockback;
         }
     }
 }

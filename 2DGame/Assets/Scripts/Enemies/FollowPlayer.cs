@@ -19,6 +19,8 @@ public class FollowPlayer : MonoBehaviour
 
     Rigidbody2D rb;
 
+    public bool followsMouse;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,15 +30,19 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Abstand zur Spielfigur
-        distToPlayer = Vector2.Distance(transform.position, player.position);
+        if (followsMouse)
+        {
+            //Abstand zur Spielfigur
+            distToPlayer = Vector2.Distance(transform.position, player.position);
 
-        if(distToPlayer < agroRange)
-        {
-            ChasePlayer();
-        } else
-        {
-            StopChasingPlayer();
+            if (distToPlayer < agroRange)
+            {
+                ChasePlayer();
+            }
+            else
+            {
+                StopChasingPlayer();
+            }
         }
     }
 
