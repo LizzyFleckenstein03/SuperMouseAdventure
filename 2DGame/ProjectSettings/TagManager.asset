@@ -11,10 +11,10 @@ TagManager:
   - CheeseCoin
   - GardenCheese
   - Heart
-  - Bullet
   - Boss
   - CheckpointManager
   - PlatformBird
+  - Thorn
   layers:
   - Default
   - TransparentFX

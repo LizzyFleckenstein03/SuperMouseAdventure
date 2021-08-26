@@ -31,4 +31,17 @@ public class Scissors : MonoBehaviour
 
         Destroy(gameObject, lifeTime);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Thorn"))
+        {
+            collision.gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 }

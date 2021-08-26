@@ -10,6 +10,8 @@ public class Cheese : MonoBehaviour
     [HideInInspector]
     public int cheesecount;
 
+    public bool collected;
+
     void Start()
     {
         countText.text = "0";
