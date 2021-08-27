@@ -50,7 +50,7 @@ public class LevelSelection : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            SceneManager.LoadScene(level + 1);
+            SceneManager.LoadScene(level + 2);
         }
 
         transform.position = levels[level].transform.position;

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartScreen.unity
+    guid: 53cbd569c9a31814a80e9d82261f7fc7
+  - enabled: 1
     path: Assets/Scenes/level_selection.unity
     guid: df75c663b11949c4e95567f58e162840
   - enabled: 1
@@ -38,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/(1) Green_Idyll/green_idyll_10.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/level_end.unity
+    guid: 25e79676835f08144b7207e3613dad12
   m_configObjects: {}
