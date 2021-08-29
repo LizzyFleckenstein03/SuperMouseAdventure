@@ -7,14 +7,23 @@ public class Dialogue : MonoBehaviour
 {
     public GameObject continueButton;
     public GameObject dialogueBox;
+    public GameObject SpeechBubble;
+    public GameObject mouse;
+
+    SpeechBubble speechBubble;
+
     public Text dialogueText;
+
     public string[] sentences;
-    private int index;
+    public int index;
+
     public float typingSpeed;
 
     void Start()
     {
-        StartCoroutine(Type());
+        dialogueBox.SetActive(false);
+        SpeechBubble.SetActive(false);
+        speechBubble = SpeechBubble.GetComponent<SpeechBubble>(); 
     }
 
     void Update()
@@ -25,8 +34,11 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    IEnumerator Type()
+    public IEnumerator Type()
     {
+        dialogueBox.SetActive(true);
+        speechBubble.NextSpeaker();
+        SpeechBubble.SetActive(true);
         foreach (char letter in sentences[index].ToCharArray())
         {
             dialogueText.text += letter;
@@ -43,11 +55,14 @@ public class Dialogue : MonoBehaviour
             index++;
             dialogueText.text = "";
             StartCoroutine(Type());
+            speechBubble.NextSpeaker();
         }
         else
         {
             dialogueText.text = "";
             dialogueBox.SetActive(false);
+            SpeechBubble.SetActive(false);
+            mouse.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
         }
     }
 }
