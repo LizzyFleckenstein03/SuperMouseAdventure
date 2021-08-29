@@ -25,7 +25,7 @@ public class CheeseCoin : MonoBehaviour
             cheeseCoinImage.sprite = missingCheeseCoin;
         }
 
-        cheeseCoin.transform.Rotate(new Vector3(0, 45, 0) * Time.deltaTime);
+        cheeseCoin.transform.Rotate(new Vector3(0, 0, 60) * Time.deltaTime);
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
