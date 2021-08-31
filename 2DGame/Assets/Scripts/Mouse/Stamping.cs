@@ -37,4 +37,12 @@ public class Stamping : MonoBehaviour
             isStamping = false;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Stamp") && isStamping)
+        {
+            collision.gameObject.SetActive(false);
+        }
+    }
 }
