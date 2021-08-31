@@ -22,6 +22,7 @@ public class Dialogue : MonoBehaviour
     void Start()
     {
         dialogueBox.SetActive(false);
+        continueButton.SetActive(false);
         SpeechBubble.SetActive(false);
         speechBubble = SpeechBubble.GetComponent<SpeechBubble>(); 
     }
