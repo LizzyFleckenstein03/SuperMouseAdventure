@@ -14,7 +14,7 @@ public class MouseController : MonoBehaviour
     private bool isJumping;
     private float moveInput;
 
-    private bool isGrounded;
+    public bool isGrounded;
     public Transform groundcheck;
     public float checkRadius;
     public LayerMask whatIsGround;
