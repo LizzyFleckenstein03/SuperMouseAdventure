@@ -39,6 +39,8 @@ public class MouseController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         powerUps = GetComponent<PowerUps>();
+
+        FindObjectOfType<AudioManager>().Play("flowers");
     }
 
     // Update is called once per frame
