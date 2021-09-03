@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Dialogue : MonoBehaviour
+public class BossDialogue : MonoBehaviour
 {
     public GameObject continueButton;
     public GameObject dialogueBox;
@@ -14,8 +14,13 @@ public class Dialogue : MonoBehaviour
 
     public Text dialogueText;
 
+    [SerializeField]
+    GameObject bossObject;
+
+    Boss boss;
+
     public string[] sentences;
-    
+
     [HideInInspector]
     public int index;
 
@@ -25,8 +30,9 @@ public class Dialogue : MonoBehaviour
     {
         dialogueBox.SetActive(false);
         continueButton.SetActive(false);
-        SpeechBubble.SetActive(false);
+        //SpeechBubble.SetActive(false);
         speechBubble = SpeechBubble.GetComponent<SpeechBubble>();
+        boss = bossObject.GetComponent<Boss>();
     }
 
     void Update()
@@ -40,8 +46,8 @@ public class Dialogue : MonoBehaviour
     public IEnumerator Type()
     {
         dialogueBox.SetActive(true);
+        //SpeechBubble.SetActive(true);
         speechBubble.NextSpeaker();
-        SpeechBubble.SetActive(true);
         foreach (char letter in sentences[index].ToCharArray())
         {
             dialogueText.text += letter;
@@ -66,7 +72,9 @@ public class Dialogue : MonoBehaviour
             dialogueText.text = "";
             dialogueBox.SetActive(false);
             SpeechBubble.SetActive(false);
+            boss.bossfight = true;
             mouse.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+            mouse.GetComponent<MouseController>().enabled = true;
         }
     }
 }

@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueTrigger : MonoBehaviour
+public class BossDialogueTrigger : MonoBehaviour
 {
     [SerializeField]
     GameObject DialogueManager;
 
-    Dialogue dialogue;
+    BossDialogue dialogue;
 
     void Start()
     {
-        dialogue = DialogueManager.GetComponent<Dialogue>();
+        dialogue = DialogueManager.GetComponent<BossDialogue>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

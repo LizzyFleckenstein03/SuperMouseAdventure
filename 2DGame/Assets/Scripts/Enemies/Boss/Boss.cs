@@ -14,31 +14,27 @@ public class Boss : MonoBehaviour
     [SerializeField]
     GameObject bossTriggerObj;
 
-    BossTrigger bossTrigger;
-
     public int bossHealth;
     public int numberOfHearts;
+    public bool bossfight = false;
 
     public Image[] bossHearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        bossTrigger = bossTriggerObj.GetComponent<BossTrigger>();
-    }
-
     // Update is called once per frame
     void Update()
     {
-        if(bossTrigger.bossFight == true)
+        if(bossfight)
         {
             bossText.enabled = true;
             bossText.text = bossName;
-        } else
+            GetComponent<FollowPlayer>().enabled = true;
+        }
+        else
         {
             bossText.enabled = false;
+            GetComponent<FollowPlayer>().enabled = false;
         }
 
         if (bossHealth > numberOfHearts)
@@ -67,13 +63,13 @@ public class Boss : MonoBehaviour
                 bossHearts[i].enabled = false;
             }
 
-            if(bossTrigger.bossFight == false)
+            if(!bossfight)
             {
                 bossHearts[i].enabled = false;
             }
         }
 
-        if (bossHealth == 0)
+        if (bossHealth <= 0)
         {
             gameObject.SetActive(false);
             bossText.enabled = false;
@@ -84,10 +80,10 @@ public class Boss : MonoBehaviour
         }
     }
 
-    //Bei Beruehrung mit der Schere oder der Maus wird die Gesundheit um 1 verringert
-    public void OnTriggerEnter2D(Collider2D collision)
+    //Bei Beruehrung mit der Schere wird die Gesundheit um 1 verringert
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (bossTrigger.bossFight == true)
+        if (bossfight)
         {
             if (collision.gameObject.CompareTag("Bullet"))
             {
