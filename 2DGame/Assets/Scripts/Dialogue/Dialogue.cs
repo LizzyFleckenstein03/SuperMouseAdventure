@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,11 +16,13 @@ public class Dialogue : MonoBehaviour
     public Text dialogueText;
 
     public string[] sentences;
-    
+
     [HideInInspector]
     public int index;
 
     public float typingSpeed;
+
+    public bool skip;
 
     void Start()
     {
@@ -35,6 +38,18 @@ public class Dialogue : MonoBehaviour
         {
             continueButton.SetActive(true);
         }
+
+        if (dialogueText.text != sentences[index])
+        {
+            if (Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0))
+            {
+                skip = true;
+            }
+            else
+            {
+                skip = false;
+            }
+        }
     }
 
     public IEnumerator Type()
@@ -49,10 +64,16 @@ public class Dialogue : MonoBehaviour
         }
     }
 
+    public void Skip()
+    {
+        dialogueText.text = sentences[index];
+    }
+
     public void NextSentence()
     {
         FindObjectOfType<AudioManager>().Play("click");
         continueButton.SetActive(false);
+        skip= false;
 
         if (index < sentences.Length - 1)
         {
