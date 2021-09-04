@@ -14,7 +14,7 @@ public class Cheese : MonoBehaviour
 
     void Start()
     {
-        countText.text = "0";
+        countText.text = cheesecount.ToString();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
