@@ -21,7 +21,7 @@ public class MousePos : MonoBehaviour
         health = GetComponent<Health>();
         cheese = GetComponent<Cheese>();
         transform.position = checkpointManager.lastCheckpointPos;
-        cheese.cheesecount = checkpointManager.lastCheeseCount;
+        cheese.SetCheeseCount(checkpointManager.lastCheeseCount);
     }
 
     void Update()

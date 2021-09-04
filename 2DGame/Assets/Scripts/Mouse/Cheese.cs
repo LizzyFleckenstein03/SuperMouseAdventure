@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Cheese : MonoBehaviour
 {
     public Text countText;
-    
+
     [HideInInspector]
     public int cheesecount;
 
@@ -14,16 +14,14 @@ public class Cheese : MonoBehaviour
 
     void Start()
     {
-        countText.text = "0";
+        SetCheeseCount(0);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Cheese"))
         {
-            cheesecount++;
-
-            SetCountText();
+            SetCheeseCount(cheesecount + 1);
 
             FindObjectOfType<AudioManager>().Play("cheese_plop");
 
@@ -31,8 +29,9 @@ public class Cheese : MonoBehaviour
         }
     }
 
-    public void SetCountText()
+    public void SetCheeseCount(int count)
     {
-        countText.text = cheesecount.ToString();
-    }
+		cheesecount = count;
+		countText.text = cheesecount.ToString();
+	}
 }

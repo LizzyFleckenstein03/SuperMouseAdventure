@@ -252,7 +252,6 @@ GameObject:
   - component: {fileID: 43277340}
   - component: {fileID: 43277339}
   - component: {fileID: 43277338}
-  - component: {fileID: 43277337}
   m_Layer: 0
   m_Name: cheese (6)
   m_TagString: Cheese
@@ -260,21 +259,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &43277337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 43277336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &43277338
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -377,7 +361,6 @@ GameObject:
   - component: {fileID: 49731311}
   - component: {fileID: 49731310}
   - component: {fileID: 49731309}
-  - component: {fileID: 49731308}
   m_Layer: 0
   m_Name: cheese (20)
   m_TagString: Cheese
@@ -385,21 +368,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &49731308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 49731307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &49731309
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -502,7 +470,6 @@ GameObject:
   - component: {fileID: 54829516}
   - component: {fileID: 54829515}
   - component: {fileID: 54829514}
-  - component: {fileID: 54829513}
   m_Layer: 0
   m_Name: cheese (18)
   m_TagString: Cheese
@@ -510,21 +477,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &54829513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 54829512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &54829514
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -627,7 +579,6 @@ GameObject:
   - component: {fileID: 56472780}
   - component: {fileID: 56472779}
   - component: {fileID: 56472778}
-  - component: {fileID: 56472777}
   m_Layer: 0
   m_Name: cheese (51)
   m_TagString: Cheese
@@ -635,21 +586,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &56472777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 56472776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &56472778
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -809,7 +745,6 @@ GameObject:
   - component: {fileID: 64427152}
   - component: {fileID: 64427151}
   - component: {fileID: 64427150}
-  - component: {fileID: 64427149}
   m_Layer: 0
   m_Name: cheese (35)
   m_TagString: Cheese
@@ -817,21 +752,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &64427149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 64427148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &64427150
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1232,7 +1152,6 @@ GameObject:
   - component: {fileID: 124579395}
   - component: {fileID: 124579394}
   - component: {fileID: 124579393}
-  - component: {fileID: 124579392}
   m_Layer: 0
   m_Name: cheese (48)
   m_TagString: Cheese
@@ -1240,21 +1159,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &124579392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 124579391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &124579393
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1357,7 +1261,6 @@ GameObject:
   - component: {fileID: 141614175}
   - component: {fileID: 141614174}
   - component: {fileID: 141614173}
-  - component: {fileID: 141614172}
   m_Layer: 0
   m_Name: cheese (9)
   m_TagString: Cheese
@@ -1365,21 +1268,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &141614172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 141614171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &141614173
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1482,7 +1370,6 @@ GameObject:
   - component: {fileID: 152546821}
   - component: {fileID: 152546820}
   - component: {fileID: 152546819}
-  - component: {fileID: 152546818}
   m_Layer: 0
   m_Name: cheese (55)
   m_TagString: Cheese
@@ -1490,21 +1377,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &152546818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 152546817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &152546819
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1707,7 +1579,6 @@ GameObject:
   - component: {fileID: 171693844}
   - component: {fileID: 171693843}
   - component: {fileID: 171693842}
-  - component: {fileID: 171693841}
   m_Layer: 0
   m_Name: cheese (36)
   m_TagString: Cheese
@@ -1715,21 +1586,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &171693841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 171693840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &171693842
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1956,7 +1812,6 @@ GameObject:
   - component: {fileID: 186249473}
   - component: {fileID: 186249472}
   - component: {fileID: 186249471}
-  - component: {fileID: 186249470}
   m_Layer: 0
   m_Name: cheese (40)
   m_TagString: Cheese
@@ -1964,21 +1819,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &186249470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 186249469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &186249471
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2606,7 +2446,6 @@ GameObject:
   - component: {fileID: 304253461}
   - component: {fileID: 304253460}
   - component: {fileID: 304253459}
-  - component: {fileID: 304253458}
   m_Layer: 0
   m_Name: cheese (26)
   m_TagString: Cheese
@@ -2614,21 +2453,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &304253458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304253457}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &304253459
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3135,7 +2959,6 @@ GameObject:
   - component: {fileID: 369192219}
   - component: {fileID: 369192218}
   - component: {fileID: 369192217}
-  - component: {fileID: 369192216}
   m_Layer: 0
   m_Name: cheese (7)
   m_TagString: Cheese
@@ -3143,21 +2966,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &369192216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369192215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &369192217
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3260,7 +3068,6 @@ GameObject:
   - component: {fileID: 384204928}
   - component: {fileID: 384204927}
   - component: {fileID: 384204926}
-  - component: {fileID: 384204925}
   m_Layer: 0
   m_Name: cheese (30)
   m_TagString: Cheese
@@ -3268,21 +3075,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &384204925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 384204924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &384204926
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3804,7 +3596,6 @@ GameObject:
   - component: {fileID: 444156464}
   - component: {fileID: 444156463}
   - component: {fileID: 444156462}
-  - component: {fileID: 444156461}
   m_Layer: 0
   m_Name: cheese (37)
   m_TagString: Cheese
@@ -3812,21 +3603,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &444156461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444156460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &444156462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4196,7 +3972,6 @@ GameObject:
   - component: {fileID: 477455566}
   - component: {fileID: 477455565}
   - component: {fileID: 477455564}
-  - component: {fileID: 477455563}
   m_Layer: 0
   m_Name: cheese (10)
   m_TagString: Cheese
@@ -4204,21 +3979,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &477455563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477455562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &477455564
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4658,7 +4418,6 @@ GameObject:
   - component: {fileID: 529772009}
   - component: {fileID: 529772008}
   - component: {fileID: 529772007}
-  - component: {fileID: 529772006}
   m_Layer: 0
   m_Name: cheese (25)
   m_TagString: Cheese
@@ -4666,21 +4425,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &529772006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529772005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &529772007
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4783,7 +4527,6 @@ GameObject:
   - component: {fileID: 581721066}
   - component: {fileID: 581721065}
   - component: {fileID: 581721064}
-  - component: {fileID: 581721063}
   m_Layer: 0
   m_Name: cheese (59)
   m_TagString: Cheese
@@ -4791,21 +4534,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &581721063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 581721062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &581721064
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5226,7 +4954,6 @@ GameObject:
   - component: {fileID: 650261604}
   - component: {fileID: 650261603}
   - component: {fileID: 650261602}
-  - component: {fileID: 650261601}
   m_Layer: 0
   m_Name: cheese (57)
   m_TagString: Cheese
@@ -5234,21 +4961,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &650261601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 650261600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &650261602
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5412,7 +5124,6 @@ GameObject:
   - component: {fileID: 694882659}
   - component: {fileID: 694882658}
   - component: {fileID: 694882657}
-  - component: {fileID: 694882656}
   m_Layer: 0
   m_Name: cheese (52)
   m_TagString: Cheese
@@ -5420,21 +5131,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &694882656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694882655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &694882657
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5537,7 +5233,6 @@ GameObject:
   - component: {fileID: 714152981}
   - component: {fileID: 714152980}
   - component: {fileID: 714152979}
-  - component: {fileID: 714152978}
   m_Layer: 0
   m_Name: cheese (34)
   m_TagString: Cheese
@@ -5545,21 +5240,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &714152978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 714152977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &714152979
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10711,7 +10391,6 @@ GameObject:
   - component: {fileID: 727105744}
   - component: {fileID: 727105743}
   - component: {fileID: 727105742}
-  - component: {fileID: 727105741}
   m_Layer: 0
   m_Name: cheese (31)
   m_TagString: Cheese
@@ -10719,21 +10398,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &727105741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 727105740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &727105742
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10915,7 +10579,6 @@ GameObject:
   - component: {fileID: 760030828}
   - component: {fileID: 760030827}
   - component: {fileID: 760030826}
-  - component: {fileID: 760030825}
   m_Layer: 0
   m_Name: cheese (13)
   m_TagString: Cheese
@@ -10923,21 +10586,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &760030825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760030824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &760030826
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11070,7 +10718,6 @@ GameObject:
   - component: {fileID: 794806977}
   - component: {fileID: 794806976}
   - component: {fileID: 794806975}
-  - component: {fileID: 794806974}
   m_Layer: 0
   m_Name: cheese (64)
   m_TagString: Cheese
@@ -11078,21 +10725,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &794806974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794806973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &794806975
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11195,7 +10827,6 @@ GameObject:
   - component: {fileID: 795583265}
   - component: {fileID: 795583264}
   - component: {fileID: 795583263}
-  - component: {fileID: 795583262}
   m_Layer: 0
   m_Name: cheese (11)
   m_TagString: Cheese
@@ -11203,21 +10834,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &795583262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 795583261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &795583263
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11402,7 +11018,6 @@ GameObject:
   - component: {fileID: 821921956}
   - component: {fileID: 821921955}
   - component: {fileID: 821921954}
-  - component: {fileID: 821921953}
   m_Layer: 0
   m_Name: cheese (22)
   m_TagString: Cheese
@@ -11410,21 +11025,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &821921953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821921952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &821921954
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11716,7 +11316,6 @@ GameObject:
   - component: {fileID: 887777421}
   - component: {fileID: 887777420}
   - component: {fileID: 887777419}
-  - component: {fileID: 887777418}
   m_Layer: 0
   m_Name: cheese (1)
   m_TagString: Cheese
@@ -11724,21 +11323,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &887777418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 887777417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &887777419
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11916,7 +11500,6 @@ GameObject:
   - component: {fileID: 898175226}
   - component: {fileID: 898175225}
   - component: {fileID: 898175224}
-  - component: {fileID: 898175223}
   m_Layer: 0
   m_Name: cheese (44)
   m_TagString: Cheese
@@ -11924,21 +11507,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &898175223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 898175222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &898175224
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12606,7 +12174,6 @@ GameObject:
   - component: {fileID: 952348388}
   - component: {fileID: 952348387}
   - component: {fileID: 952348386}
-  - component: {fileID: 952348385}
   m_Layer: 0
   m_Name: cheese (66)
   m_TagString: Cheese
@@ -12614,21 +12181,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &952348385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952348384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &952348386
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12824,7 +12376,6 @@ GameObject:
   - component: {fileID: 974511293}
   - component: {fileID: 974511292}
   - component: {fileID: 974511291}
-  - component: {fileID: 974511290}
   m_Layer: 0
   m_Name: cheese (14)
   m_TagString: Cheese
@@ -12832,21 +12383,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &974511290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 974511289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &974511291
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12949,7 +12485,6 @@ GameObject:
   - component: {fileID: 985281170}
   - component: {fileID: 985281169}
   - component: {fileID: 985281168}
-  - component: {fileID: 985281167}
   m_Layer: 0
   m_Name: cheese (33)
   m_TagString: Cheese
@@ -12957,21 +12492,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &985281167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 985281166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &985281168
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13588,7 +13108,6 @@ GameObject:
   - component: {fileID: 1026120326}
   - component: {fileID: 1026120325}
   - component: {fileID: 1026120324}
-  - component: {fileID: 1026120323}
   m_Layer: 0
   m_Name: cheese (45)
   m_TagString: Cheese
@@ -13596,21 +13115,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1026120323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1026120322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1026120324
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13713,7 +13217,6 @@ GameObject:
   - component: {fileID: 1052557861}
   - component: {fileID: 1052557860}
   - component: {fileID: 1052557859}
-  - component: {fileID: 1052557858}
   m_Layer: 0
   m_Name: cheese (43)
   m_TagString: Cheese
@@ -13721,21 +13224,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1052557858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052557857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1052557859
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13838,7 +13326,6 @@ GameObject:
   - component: {fileID: 1057218427}
   - component: {fileID: 1057218426}
   - component: {fileID: 1057218425}
-  - component: {fileID: 1057218424}
   m_Layer: 0
   m_Name: cheese (29)
   m_TagString: Cheese
@@ -13846,21 +13333,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1057218424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1057218423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1057218425
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14117,7 +13589,6 @@ GameObject:
   - component: {fileID: 1096052464}
   - component: {fileID: 1096052463}
   - component: {fileID: 1096052462}
-  - component: {fileID: 1096052461}
   m_Layer: 0
   m_Name: cheese (21)
   m_TagString: Cheese
@@ -14125,21 +13596,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1096052461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1096052460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1096052462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14309,7 +13765,6 @@ GameObject:
   - component: {fileID: 1105113511}
   - component: {fileID: 1105113510}
   - component: {fileID: 1105113509}
-  - component: {fileID: 1105113508}
   m_Layer: 0
   m_Name: cheese (47)
   m_TagString: Cheese
@@ -14317,21 +13772,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1105113508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1105113507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1105113509
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27953,7 +27393,6 @@ GameObject:
   - component: {fileID: 1175764125}
   - component: {fileID: 1175764124}
   - component: {fileID: 1175764123}
-  - component: {fileID: 1175764122}
   m_Layer: 0
   m_Name: cheese (62)
   m_TagString: Cheese
@@ -27961,21 +27400,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1175764122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1175764121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1175764123
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28675,7 +28099,6 @@ GameObject:
   - component: {fileID: 1226020771}
   - component: {fileID: 1226020770}
   - component: {fileID: 1226020769}
-  - component: {fileID: 1226020768}
   m_Layer: 0
   m_Name: cheese (42)
   m_TagString: Cheese
@@ -28683,21 +28106,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1226020768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1226020767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1226020769
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30360,7 +29768,6 @@ GameObject:
   - component: {fileID: 1356534584}
   - component: {fileID: 1356534583}
   - component: {fileID: 1356534582}
-  - component: {fileID: 1356534581}
   m_Layer: 0
   m_Name: cheese (32)
   m_TagString: Cheese
@@ -30368,21 +29775,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1356534581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1356534580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1356534582
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30542,7 +29934,6 @@ GameObject:
   - component: {fileID: 1364830494}
   - component: {fileID: 1364830493}
   - component: {fileID: 1364830492}
-  - component: {fileID: 1364830491}
   m_Layer: 0
   m_Name: cheese (28)
   m_TagString: Cheese
@@ -30550,21 +29941,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1364830491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1364830490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1364830492
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30667,7 +30043,6 @@ GameObject:
   - component: {fileID: 1365159617}
   - component: {fileID: 1365159616}
   - component: {fileID: 1365159615}
-  - component: {fileID: 1365159614}
   m_Layer: 0
   m_Name: cheese (56)
   m_TagString: Cheese
@@ -30675,21 +30050,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1365159614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1365159613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1365159615
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30823,7 +30183,6 @@ GameObject:
   - component: {fileID: 1417518807}
   - component: {fileID: 1417518806}
   - component: {fileID: 1417518805}
-  - component: {fileID: 1417518804}
   m_Layer: 0
   m_Name: cheese (65)
   m_TagString: Cheese
@@ -30831,21 +30190,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1417518804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417518803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1417518805
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30948,7 +30292,6 @@ GameObject:
   - component: {fileID: 1421652121}
   - component: {fileID: 1421652120}
   - component: {fileID: 1421652119}
-  - component: {fileID: 1421652118}
   m_Layer: 0
   m_Name: cheese (4)
   m_TagString: Cheese
@@ -30956,21 +30299,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1421652118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1421652117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1421652119
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31397,7 +30725,6 @@ GameObject:
   - component: {fileID: 1459755704}
   - component: {fileID: 1459755703}
   - component: {fileID: 1459755702}
-  - component: {fileID: 1459755701}
   m_Layer: 0
   m_Name: cheese (67)
   m_TagString: Cheese
@@ -31405,21 +30732,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1459755701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1459755700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1459755702
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32234,7 +31546,6 @@ GameObject:
   - component: {fileID: 1575923600}
   - component: {fileID: 1575923599}
   - component: {fileID: 1575923598}
-  - component: {fileID: 1575923597}
   m_Layer: 0
   m_Name: cheese (58)
   m_TagString: Cheese
@@ -32242,21 +31553,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1575923597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1575923596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1575923598
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32359,7 +31655,6 @@ GameObject:
   - component: {fileID: 1576216816}
   - component: {fileID: 1576216815}
   - component: {fileID: 1576216814}
-  - component: {fileID: 1576216813}
   m_Layer: 0
   m_Name: cheese (24)
   m_TagString: Cheese
@@ -32367,21 +31662,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1576216813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1576216812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1576216814
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32484,7 +31764,6 @@ GameObject:
   - component: {fileID: 1581008562}
   - component: {fileID: 1581008561}
   - component: {fileID: 1581008560}
-  - component: {fileID: 1581008559}
   m_Layer: 0
   m_Name: cheese (27)
   m_TagString: Cheese
@@ -32492,21 +31771,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1581008559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1581008558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1581008560
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32773,7 +32037,6 @@ GameObject:
   - component: {fileID: 1620409438}
   - component: {fileID: 1620409437}
   - component: {fileID: 1620409436}
-  - component: {fileID: 1620409435}
   m_Layer: 0
   m_Name: cheese (50)
   m_TagString: Cheese
@@ -32781,21 +32044,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1620409435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1620409434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1620409436
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32928,7 +32176,6 @@ GameObject:
   - component: {fileID: 1648284920}
   - component: {fileID: 1648284919}
   - component: {fileID: 1648284918}
-  - component: {fileID: 1648284917}
   m_Layer: 0
   m_Name: cheese (61)
   m_TagString: Cheese
@@ -32936,21 +32183,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1648284917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1648284916}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1648284918
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33372,7 +32604,6 @@ GameObject:
   - component: {fileID: 1746791702}
   - component: {fileID: 1746791701}
   - component: {fileID: 1746791700}
-  - component: {fileID: 1746791699}
   m_Layer: 0
   m_Name: cheese (17)
   m_TagString: Cheese
@@ -33380,21 +32611,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1746791699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1746791698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1746791700
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33497,7 +32713,6 @@ GameObject:
   - component: {fileID: 1749582168}
   - component: {fileID: 1749582167}
   - component: {fileID: 1749582166}
-  - component: {fileID: 1749582165}
   m_Layer: 0
   m_Name: cheese (5)
   m_TagString: Cheese
@@ -33505,21 +32720,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1749582165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1749582164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1749582166
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33622,7 +32822,6 @@ GameObject:
   - component: {fileID: 1782500350}
   - component: {fileID: 1782500349}
   - component: {fileID: 1782500348}
-  - component: {fileID: 1782500347}
   m_Layer: 0
   m_Name: cheese (60)
   m_TagString: Cheese
@@ -33630,21 +32829,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1782500347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1782500346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1782500348
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33777,7 +32961,6 @@ GameObject:
   - component: {fileID: 1802557758}
   - component: {fileID: 1802557757}
   - component: {fileID: 1802557756}
-  - component: {fileID: 1802557755}
   m_Layer: 0
   m_Name: cheese (63)
   m_TagString: Cheese
@@ -33785,21 +32968,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1802557755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1802557754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1802557756
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33902,7 +33070,6 @@ GameObject:
   - component: {fileID: 1803555594}
   - component: {fileID: 1803555593}
   - component: {fileID: 1803555592}
-  - component: {fileID: 1803555591}
   m_Layer: 0
   m_Name: cheese (2)
   m_TagString: Cheese
@@ -33910,21 +33077,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1803555591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1803555590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1803555592
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34027,7 +33179,6 @@ GameObject:
   - component: {fileID: 1808579566}
   - component: {fileID: 1808579565}
   - component: {fileID: 1808579564}
-  - component: {fileID: 1808579563}
   m_Layer: 0
   m_Name: cheese (41)
   m_TagString: Cheese
@@ -34035,21 +33186,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1808579563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1808579562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1808579564
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34152,7 +33288,6 @@ GameObject:
   - component: {fileID: 1818015062}
   - component: {fileID: 1818015061}
   - component: {fileID: 1818015060}
-  - component: {fileID: 1818015059}
   m_Layer: 0
   m_Name: cheese (46)
   m_TagString: Cheese
@@ -34160,21 +33295,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1818015059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1818015058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1818015060
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34443,7 +33563,6 @@ GameObject:
   - component: {fileID: 1826873328}
   - component: {fileID: 1826873327}
   - component: {fileID: 1826873326}
-  - component: {fileID: 1826873325}
   m_Layer: 0
   m_Name: cheese (3)
   m_TagString: Cheese
@@ -34451,21 +33570,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1826873325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1826873324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1826873326
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34568,7 +33672,6 @@ GameObject:
   - component: {fileID: 1833155927}
   - component: {fileID: 1833155926}
   - component: {fileID: 1833155925}
-  - component: {fileID: 1833155924}
   m_Layer: 0
   m_Name: cheese (8)
   m_TagString: Cheese
@@ -34576,21 +33679,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1833155924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1833155923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1833155925
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34859,7 +33947,6 @@ GameObject:
   - component: {fileID: 1865508563}
   - component: {fileID: 1865508562}
   - component: {fileID: 1865508561}
-  - component: {fileID: 1865508560}
   m_Layer: 0
   m_Name: cheese (23)
   m_TagString: Cheese
@@ -34867,21 +33954,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1865508560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1865508559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1865508561
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35534,7 +34606,6 @@ GameObject:
   - component: {fileID: 1925059293}
   - component: {fileID: 1925059292}
   - component: {fileID: 1925059291}
-  - component: {fileID: 1925059290}
   m_Layer: 0
   m_Name: cheese (16)
   m_TagString: Cheese
@@ -35542,21 +34613,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1925059290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1925059289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1925059291
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35659,7 +34715,6 @@ GameObject:
   - component: {fileID: 1933878931}
   - component: {fileID: 1933878930}
   - component: {fileID: 1933878929}
-  - component: {fileID: 1933878928}
   m_Layer: 0
   m_Name: cheese (54)
   m_TagString: Cheese
@@ -35667,21 +34722,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1933878928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1933878927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1933878929
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35893,7 +34933,6 @@ GameObject:
   - component: {fileID: 1985583046}
   - component: {fileID: 1985583045}
   - component: {fileID: 1985583044}
-  - component: {fileID: 1985583043}
   m_Layer: 0
   m_Name: cheese (49)
   m_TagString: Cheese
@@ -35901,21 +34940,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1985583043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1985583042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1985583044
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36018,7 +35042,6 @@ GameObject:
   - component: {fileID: 1988317191}
   - component: {fileID: 1988317190}
   - component: {fileID: 1988317189}
-  - component: {fileID: 1988317188}
   m_Layer: 0
   m_Name: cheese (53)
   m_TagString: Cheese
@@ -36026,21 +35049,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1988317188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988317187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &1988317189
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36200,7 +35208,6 @@ GameObject:
   - component: {fileID: 2014517206}
   - component: {fileID: 2014517205}
   - component: {fileID: 2014517204}
-  - component: {fileID: 2014517203}
   m_Layer: 0
   m_Name: cheese (39)
   m_TagString: Cheese
@@ -36208,21 +35215,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2014517203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2014517202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &2014517204
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36325,7 +35317,6 @@ GameObject:
   - component: {fileID: 2023385363}
   - component: {fileID: 2023385362}
   - component: {fileID: 2023385361}
-  - component: {fileID: 2023385360}
   m_Layer: 0
   m_Name: cheese (12)
   m_TagString: Cheese
@@ -36333,21 +35324,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2023385360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2023385359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &2023385361
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36676,7 +35652,6 @@ GameObject:
   - component: {fileID: 2033687558}
   - component: {fileID: 2033687557}
   - component: {fileID: 2033687556}
-  - component: {fileID: 2033687555}
   m_Layer: 0
   m_Name: cheese (15)
   m_TagString: Cheese
@@ -36684,21 +35659,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2033687555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2033687554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &2033687556
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36857,7 +35817,6 @@ GameObject:
   - component: {fileID: 2066945854}
   - component: {fileID: 2066945853}
   - component: {fileID: 2066945852}
-  - component: {fileID: 2066945851}
   m_Layer: 0
   m_Name: cheese (38)
   m_TagString: Cheese
@@ -36865,21 +35824,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2066945851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066945850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &2066945852
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37118,7 +36062,6 @@ GameObject:
   - component: {fileID: 2114119939}
   - component: {fileID: 2114119938}
   - component: {fileID: 2114119937}
-  - component: {fileID: 2114119936}
   m_Layer: 0
   m_Name: cheese (19)
   m_TagString: Cheese
@@ -37126,21 +36069,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2114119936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2114119935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d449e328434351d4d90e70cf9fb6df9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countText: {fileID: 1283337208}
-  cheesecount: 0
-  collected: 0
 --- !u!61 &2114119937
 BoxCollider2D:
   m_ObjectHideFlags: 0
