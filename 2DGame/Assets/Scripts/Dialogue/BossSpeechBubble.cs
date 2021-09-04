@@ -2,18 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpeechBubble : MonoBehaviour
+public class BossSpeechBubble : MonoBehaviour
 {
     [SerializeField]
     GameObject dialogueManager;
 
-    Dialogue dialogue;
+    BossDialogue dialogue;
 
     public Transform[] speakers;
 
     void Start()
     {
-        dialogue = dialogueManager.GetComponent<Dialogue>();
+        dialogue = dialogueManager.GetComponent<BossDialogue>();
     }
 
     public void NextSpeaker()

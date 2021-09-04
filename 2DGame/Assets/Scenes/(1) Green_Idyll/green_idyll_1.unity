@@ -2576,6 +2576,11 @@ MonoBehaviour:
     volume: 0.2
     pitch: 1
     source: {fileID: 0}
+  - name: click
+    clip: {fileID: 8300000, guid: a466bc92929244521a62704f97c915bc, type: 3}
+    volume: 0.2
+    pitch: 1
+    source: {fileID: 0}
 --- !u!4 &292106544
 Transform:
   m_ObjectHideFlags: 0
@@ -5200,7 +5205,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 631343912}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aec751965eb08894180422494fd03a80, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c29d09f2b5174b07812a2ca95ed3316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 2036393123}
@@ -11034,7 +11039,7 @@ GameObject:
   m_Component:
   - component: {fileID: 791090330}
   m_Layer: 0
-  m_Name: bubblePos (1)
+  m_Name: bubblePos_mouse
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -30233,7 +30238,7 @@ GameObject:
   - component: {fileID: 1343376135}
   - component: {fileID: 1343376136}
   m_Layer: 0
-  m_Name: prof_tutori
+  m_Name: prof_erclaire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

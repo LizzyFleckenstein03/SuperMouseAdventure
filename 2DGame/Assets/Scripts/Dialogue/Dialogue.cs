@@ -67,6 +67,7 @@ public class Dialogue : MonoBehaviour
             dialogueBox.SetActive(false);
             SpeechBubble.SetActive(false);
             mouse.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+            mouse.GetComponent<MouseController>().enabled = true;
         }
     }
 }
