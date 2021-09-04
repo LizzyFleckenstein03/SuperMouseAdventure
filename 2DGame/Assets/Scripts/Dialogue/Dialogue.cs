@@ -41,7 +41,7 @@ public class Dialogue : MonoBehaviour
 
         if (dialogueText.text != sentences[index])
         {
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0))
             {
                 skip = true;
             }
