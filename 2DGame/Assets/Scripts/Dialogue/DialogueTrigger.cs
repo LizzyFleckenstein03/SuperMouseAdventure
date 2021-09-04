@@ -25,12 +25,13 @@ public class DialogueTrigger : MonoBehaviour
         }
     }
 
-    private void Update()
+    void Update()
     {
         if (dialogue.skip)
         {
             StopCoroutine(dialogue.Type());
             dialogue.Skip();
+            dialogue.skip = false;
         }
     }
 }

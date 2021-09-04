@@ -45,10 +45,9 @@ public class Dialogue : MonoBehaviour
             {
                 skip = true;
             }
-            else
-            {
-                skip = false;
-            }
+        } else
+        {
+            skip = false;
         }
     }
 

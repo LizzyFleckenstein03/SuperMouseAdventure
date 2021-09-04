@@ -32,7 +32,7 @@ public class Stamping : MonoBehaviour
                 rb.velocity = Vector2.down * stampingSpeed;
             }
         }
-        else
+        else if (mouseController.isGrounded)
         {
             isStamping = false;
         }
