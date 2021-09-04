@@ -16,7 +16,7 @@ public class Dialogue : MonoBehaviour
     public Text dialogueText;
 
     public string[] sentences;
-    
+
     [HideInInspector]
     public int index;
 
