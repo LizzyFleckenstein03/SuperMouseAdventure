@@ -12,26 +12,17 @@ public class Cheese : MonoBehaviour
 
     public bool collected;
 
-    void Start()
-    {
-        SetCheeseCount(0);
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Cheese"))
         {
-            SetCheeseCount(cheesecount + 1);
+            cheesecount++;
+
+            countText.text = cheesecount.ToString();
 
             FindObjectOfType<AudioManager>().Play("cheese_plop");
 
             collision.gameObject.SetActive(false);
         }
     }
-
-    public void SetCheeseCount(int count)
-    {
-		cheesecount = count;
-		countText.text = cheesecount.ToString();
-	}
 }

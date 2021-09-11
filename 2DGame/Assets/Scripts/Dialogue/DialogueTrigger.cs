@@ -24,14 +24,4 @@ public class DialogueTrigger : MonoBehaviour
             GetComponent<BoxCollider2D>().enabled = false;
         }
     }
-
-    void Update()
-    {
-        if (dialogue.skip)
-        {
-            StopCoroutine(dialogue.Type());
-            dialogue.Skip();
-            dialogue.skip = false;
-        }
-    }
 }

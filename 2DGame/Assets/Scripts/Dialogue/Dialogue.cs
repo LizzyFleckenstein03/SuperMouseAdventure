@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Dialogue : MonoBehaviour
 {
     public GameObject continueButton;
+    public GameObject skipButton;
     public GameObject dialogueBox;
     public GameObject SpeechBubble;
     public GameObject mouse;
@@ -22,12 +23,11 @@ public class Dialogue : MonoBehaviour
 
     public float typingSpeed;
 
-    public bool skip;
-
     void Start()
     {
         dialogueBox.SetActive(false);
         continueButton.SetActive(false);
+        skipButton.SetActive(false);
         SpeechBubble.SetActive(false);
         speechBubble = SpeechBubble.GetComponent<SpeechBubble>();
     }
@@ -37,23 +37,14 @@ public class Dialogue : MonoBehaviour
         if (dialogueText.text == sentences[index])
         {
             continueButton.SetActive(true);
-        }
-
-        if (dialogueText.text != sentences[index])
-        {
-            if (Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0))
-            {
-                skip = true;
-            }
-        } else
-        {
-            skip = false;
+            skipButton.SetActive(true);
         }
     }
 
     public IEnumerator Type()
     {
         dialogueBox.SetActive(true);
+        skipButton.SetActive(true);
         speechBubble.NextSpeaker();
         SpeechBubble.SetActive(true);
         foreach (char letter in sentences[index].ToCharArray())
@@ -63,16 +54,10 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    public void Skip()
-    {
-        dialogueText.text = sentences[index];
-    }
-
     public void NextSentence()
     {
         FindObjectOfType<AudioManager>().Play("click");
         continueButton.SetActive(false);
-        skip= false;
 
         if (index < sentences.Length - 1)
         {
@@ -89,5 +74,14 @@ public class Dialogue : MonoBehaviour
             mouse.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
             mouse.GetComponent<MouseController>().enabled = true;
         }
+    }
+
+    public void Skip()
+    {
+        dialogueText.text = "";
+        dialogueBox.SetActive(false);
+        SpeechBubble.SetActive(false);
+        mouse.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+        mouse.GetComponent<MouseController>().enabled = true;
     }
 }

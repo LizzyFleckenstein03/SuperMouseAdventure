@@ -50,7 +50,6 @@ public class CheckpointManager : MonoBehaviour
     {
         PlayerData data = SaveSystem.LoadPlayer();
 
-        cheese.SetCheeseCount(data.collectedCheese);
         cheeseCoin.cheeseCoinCollected = data.isCheeseCoinCollected;
 
         Vector3 position;
