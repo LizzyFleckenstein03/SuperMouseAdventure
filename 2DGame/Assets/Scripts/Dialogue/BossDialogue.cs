@@ -10,7 +10,7 @@ public class BossDialogue : MonoBehaviour
     public GameObject SpeechBubble;
     public GameObject mouse;
 
-    SpeechBubble speechBubble;
+    BossSpeechBubble speechBubble;
 
     public Text dialogueText;
 
@@ -31,7 +31,7 @@ public class BossDialogue : MonoBehaviour
         dialogueBox.SetActive(false);
         continueButton.SetActive(false);
         //SpeechBubble.SetActive(false);
-        speechBubble = SpeechBubble.GetComponent<SpeechBubble>();
+        speechBubble = SpeechBubble.GetComponent<BossSpeechBubble>();
         boss = bossObject.GetComponent<Boss>();
     }
 
@@ -46,7 +46,7 @@ public class BossDialogue : MonoBehaviour
     public IEnumerator Type()
     {
         dialogueBox.SetActive(true);
-        //SpeechBubble.SetActive(true);
+        SpeechBubble.SetActive(true);
         speechBubble.NextSpeaker();
         foreach (char letter in sentences[index].ToCharArray())
         {
