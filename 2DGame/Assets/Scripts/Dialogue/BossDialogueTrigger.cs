@@ -23,7 +23,6 @@ public class BossDialogueTrigger : MonoBehaviour
             collision.gameObject.GetComponent<MouseController>().enabled = false;
             GetComponent<BoxCollider2D>().enabled = false;
             FindObjectOfType<AudioManager>().Stop("flowers");
-            FindObjectOfType<AudioManager>().Play("snail_fight");
         }
     }
 }

@@ -15,7 +15,8 @@ public class LandingSound : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             FindObjectOfType<AudioManager>().Play("landung");
-            Instantiate(dustEffect, groundCheck.transform.position, Quaternion.identity);
+            Vector3 spawnPos = new Vector3(groundCheck.transform.position.x, groundCheck.transform.position.y + 1, groundCheck.transform.position.z);
+            Instantiate(dustEffect, spawnPos, Quaternion.identity);
         }
     }
 }

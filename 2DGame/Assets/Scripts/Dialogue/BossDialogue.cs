@@ -75,6 +75,7 @@ public class BossDialogue : MonoBehaviour
             boss.bossfight = true;
             mouse.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
             mouse.GetComponent<MouseController>().enabled = true;
+            FindObjectOfType<AudioManager>().Play("snail_fight");
         }
     }
 }

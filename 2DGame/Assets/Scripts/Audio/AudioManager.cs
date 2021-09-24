@@ -5,22 +5,10 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
-    public static AudioManager instance;
+    public string music;
 
     void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        DontDestroyOnLoad(gameObject);
-
         foreach (Sound s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
@@ -31,15 +19,20 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        FindObjectOfType<AudioManager>().Play(music);
+    }
+
     public void Play(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
         s.source.Play();
     }
 
-    public void Stop(string sound)
+    public void Stop(string name)
     {
-        Sound s = Array.Find(sounds, item => item.name == sound);
+        Sound s = Array.Find(sounds, sound => sound.name == name);
         s.source.Stop();
     }
 }
