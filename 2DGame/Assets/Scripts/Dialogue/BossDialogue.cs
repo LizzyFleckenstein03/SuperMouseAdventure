@@ -73,6 +73,7 @@ public class BossDialogue : MonoBehaviour
             dialogueBox.SetActive(false);
             SpeechBubble.SetActive(false);
             boss.bossfight = true;
+            bossObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
             mouse.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
             mouse.GetComponent<MouseController>().enabled = true;
             FindObjectOfType<AudioManager>().Play("snail_fight");
