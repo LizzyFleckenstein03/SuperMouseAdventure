@@ -1556,6 +1556,7 @@ GameObject:
   - component: {fileID: 243225409}
   - component: {fileID: 243225414}
   - component: {fileID: 243225413}
+  - component: {fileID: 243225412}
   m_Layer: 8
   m_Name: snail
   m_TagString: Boss
@@ -2155,6 +2156,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &243225412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243225404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed66910e4a1d1484897de833329dc42a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashingTime: 0.3
 --- !u!114 &243225413
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -84,17 +84,4 @@ public class Boss : MonoBehaviour
             }
         }
     }
-
-    //Bei Beruehrung mit der Schere wird die Gesundheit um 1 verringert
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (bossfight)
-        {
-            if (collision.gameObject.CompareTag("Bullet"))
-            {
-                bossHealth--;
-                Destroy(collision.gameObject);
-            }
-        }
-    }
 }

@@ -33,7 +33,7 @@ public class EnemyCollision : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") && invulnerable == false)
+        if (collision.gameObject.CompareTag("Player") && !invulnerable)
         {
             powerUps.mouseIsGardener = false;
             health.DealDamage(eS.enemyDamage);
