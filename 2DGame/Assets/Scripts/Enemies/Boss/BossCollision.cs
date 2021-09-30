@@ -27,6 +27,7 @@ public class BossCollision : MonoBehaviour
             {
                 boss.bossHealth--;
                 Destroy(collision.gameObject);
+                invulnerable = true;
                 //StartCoroutine("GetInvincible");
             }
         }

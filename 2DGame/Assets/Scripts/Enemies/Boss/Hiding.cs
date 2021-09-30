@@ -29,5 +29,6 @@ public class Hiding : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.SetBool("isHiding", false);
+        bossCollision.invulnerable = false;
     }
 }
