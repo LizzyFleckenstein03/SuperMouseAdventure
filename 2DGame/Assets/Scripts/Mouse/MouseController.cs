@@ -13,7 +13,10 @@ public class MouseController : MonoBehaviour
     public float jumptime;
     private bool isJumping;
     private float moveInput;
+    public float coyoteTime;
+    private bool jumpAllowed;
 
+    [HideInInspector]
     public bool isGrounded;
     public Transform groundcheck;
     public float checkRadius;
@@ -44,14 +47,23 @@ public class MouseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (isGrounded == true && Input.GetButtonDown("Jump"))
+        if (!isGrounded)
+        {
+            StartCoroutine(CoyoteTime());
+        }
+        else
+        {
+            jumpAllowed = true;
+        }
+
+		if (jumpAllowed && Input.GetButtonDown("Jump"))
         {
             isJumping = true;
             jumpTimeCounter = jumptime;
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
 
-        if (Input.GetButton("Jump") && isJumping == true)
+        if (Input.GetButton("Jump") && isJumping)
         {
             if (jumpTimeCounter > 0)
             {
@@ -107,7 +119,7 @@ public class MouseController : MonoBehaviour
 				return true;
 		}
 
-		return false;
+		return false; 
 	}
 
     void FixedUpdate()
@@ -142,6 +154,12 @@ public class MouseController : MonoBehaviour
 			if (oldSign == -Math.Sign(rb.velocity.x))
 				rb.velocity = new Vector2(0, rb.velocity.y);
 		}
+    }
+
+    IEnumerator CoyoteTime()
+    {
+        yield return new WaitForSeconds(coyoteTime);
+        jumpAllowed = false;
     }
 
     void ResetShoot()

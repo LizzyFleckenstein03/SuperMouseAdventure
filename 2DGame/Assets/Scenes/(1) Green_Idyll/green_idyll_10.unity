@@ -2169,6 +2169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashingTime: 0.3
+  invulnerable: 0
 --- !u!114 &243225413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12870,6 +12871,7 @@ MonoBehaviour:
   speed: 36
   jumpForce: 50
   jumptime: 0.5
+  coyoteTime: 0.1
   isGrounded: 0
   groundcheck: {fileID: 972365582}
   checkRadius: 0.5
@@ -27480,7 +27482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lastCheckpointPos: {x: 0, y: 0, z: 0}
   firstCheckpoint: {fileID: 936765971}
-  mouse: {fileID: 214740917}
+  mouse: {fileID: 1649732366}
   lastCheeseCount: 0
   isCheeseCoinCollected: 0
 --- !u!1 &1423339812
