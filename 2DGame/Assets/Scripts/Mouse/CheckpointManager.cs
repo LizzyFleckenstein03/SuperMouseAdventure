@@ -11,7 +11,7 @@ public class CheckpointManager : MonoBehaviour
     [SerializeField]
     Transform firstCheckpoint;
 
-    Cheese cheese;
+    CheeseCollection cheese;
 
     CheeseCoin cheeseCoin;
 
@@ -20,7 +20,6 @@ public class CheckpointManager : MonoBehaviour
     public int lastCheeseCount;
 
     public bool isCheeseCoinCollected;
-
 
     void Awake()
     {

@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Cheese : MonoBehaviour
+public class CheeseCollection : MonoBehaviour
 {
     public Text countText;
 
     [HideInInspector]
     public int cheesecount;
-
-    public bool collected;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -22,7 +20,7 @@ public class Cheese : MonoBehaviour
 
             FindObjectOfType<AudioManager>().Play("cheese_plop");
 
-            collision.gameObject.SetActive(false);
+            Destroy(collision.gameObject);
         }
     }
 }

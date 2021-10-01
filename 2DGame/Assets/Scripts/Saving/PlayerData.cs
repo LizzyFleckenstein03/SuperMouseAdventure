@@ -8,7 +8,7 @@ public class PlayerData
     public int collectedCheese;
     public bool isCheeseCoinCollected;
 
-    public PlayerData (CheckpointManager cm, Cheese cheese, CheeseCoin cheeseCoin)
+    public PlayerData (CheckpointManager cm, CheeseCollection cheese, CheeseCoin cheeseCoin)
     {
         collectedCheese = cheese.cheesecount;
         isCheeseCoinCollected = cheeseCoin.cheeseCoinCollected;

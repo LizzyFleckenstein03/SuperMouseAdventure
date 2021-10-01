@@ -5,7 +5,7 @@ using UnityEngine;
 public class Checkpoint : MonoBehaviour
 {
     private CheckpointManager cm;
-    private Cheese cheese;
+    private CheeseCollection cheese;
     private CheeseCoin cheeseCoin;
 
     public Sprite green;
@@ -13,7 +13,7 @@ public class Checkpoint : MonoBehaviour
     void Start()
     {
         cm = GameObject.FindGameObjectWithTag("CheckpointManager").GetComponent<CheckpointManager>();
-        cheese = GameObject.FindGameObjectWithTag("Player").GetComponent<Cheese>();
+        cheese = GameObject.FindGameObjectWithTag("Player").GetComponent<CheeseCollection>();
         cheeseCoin = GameObject.FindGameObjectWithTag("Player").GetComponent<CheeseCoin>();
     }
 
