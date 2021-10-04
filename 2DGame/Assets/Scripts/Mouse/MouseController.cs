@@ -11,10 +11,13 @@ public class MouseController : MonoBehaviour
     public float jumpForce;
     private float jumpTimeCounter;
     public float jumptime;
-    private bool isJumping;
     private float moveInput;
+
     public float coyoteTime;
-    private bool jumpAllowed;
+    private float coyoteTimeCounter;
+
+    public float jumpBufferLength;
+    private float jumpBufferCounter;
 
     [HideInInspector]
     public bool isGrounded;
@@ -30,12 +33,13 @@ public class MouseController : MonoBehaviour
 
     [SerializeField]
     GameObject bullet;
+    
     [SerializeField]
     Transform bulletSpawnPos;
+
     [SerializeField]
     private float shootDelay = 0.5f;
 
-    // Start is called before the first frame update
     void Start()
     {
         //Hier wird der Rigidbody initialisiert
@@ -44,38 +48,39 @@ public class MouseController : MonoBehaviour
         powerUps = GetComponent<PowerUps>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (!isGrounded)
+        //manage coyote time
+        if (isGrounded)
         {
-            StartCoroutine(CoyoteTime());
-        }
-        else
+            coyoteTimeCounter = coyoteTime;
+        } else
         {
-            jumpAllowed = true;
+            coyoteTimeCounter -= Time.deltaTime;
         }
 
-		if (jumpAllowed && Input.GetButtonDown("Jump"))
+        //manage jump buffering
+        if (Input.GetButtonDown("Jump"))
         {
-            isJumping = true;
-            jumpTimeCounter = jumptime;
+            jumpBufferCounter = jumpBufferLength;
+        } else
+        {
+            jumpBufferCounter -= Time.deltaTime;
+        }
+
+        //jump
+        if (jumpBufferCounter >= 0 && coyoteTimeCounter > 0)
+        {
+            isGrounded = false;
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            jumpBufferCounter = 0;
+            coyoteTimeCounter = 0;
         }
-
-        if (Input.GetButton("Jump") && isJumping)
+        
+        //jumping with different height
+        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0)
         {
-            if (jumpTimeCounter > 0)
-            {
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-                jumpTimeCounter -= Time.deltaTime;
-                FindObjectOfType<AudioManager>().Play("sprung");
-            }
-        }
-
-        if (Input.GetButtonUp("Jump"))
-        {
-            isJumping = false;
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce * 0.5f);
         }
 
         if (rb.velocity.x < 0)
@@ -133,7 +138,7 @@ public class MouseController : MonoBehaviour
 
 		if (moveInput != 0)
 		{
-			acceleration *= moveInput * 4;
+			acceleration *= moveInput * 3;
 		}
 		else if (isGrounded)
 		{
@@ -154,12 +159,6 @@ public class MouseController : MonoBehaviour
 			if (oldSign == -Math.Sign(rb.velocity.x))
 				rb.velocity = new Vector2(0, rb.velocity.y);
 		}
-    }
-
-    IEnumerator CoyoteTime()
-    {
-        yield return new WaitForSeconds(coyoteTime);
-        jumpAllowed = false;
     }
 
     void ResetShoot()

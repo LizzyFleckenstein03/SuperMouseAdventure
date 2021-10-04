@@ -9,6 +9,7 @@ public class BossCollision : MonoBehaviour
     SpriteRenderer spriteRenderer;
 
     public float flashingTime;
+    
     [HideInInspector]
     public bool invulnerable;
 
@@ -28,24 +29,7 @@ public class BossCollision : MonoBehaviour
                 boss.bossHealth--;
                 Destroy(collision.gameObject);
                 invulnerable = true;
-                //StartCoroutine("GetInvincible");
             }
         }
     }
-
-    /**IEnumerator GetInvincible()
-    {
-        invulnerable = true;
-        Physics2D.IgnoreLayerCollision(7, 8, true);
-        for (int i = 0; i < 4; i++)
-        {
-            spriteRenderer.enabled = false;
-            yield return new WaitForSeconds(flashingTime);
-            spriteRenderer.enabled = true;
-            yield return new WaitForSeconds(flashingTime);
-        }
-        Physics2D.IgnoreLayerCollision(7, 8, false);
-        spriteRenderer.enabled = true;
-        invulnerable = false;
-    }*/
 }
