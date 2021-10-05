@@ -2484,6 +2484,7 @@ MonoBehaviour:
     volume: 0.2
     pitch: 1
     source: {fileID: 0}
+  music: flowers
 --- !u!4 &292106544
 Transform:
   m_ObjectHideFlags: 0
@@ -11864,6 +11865,8 @@ MonoBehaviour:
   speed: 36
   jumpForce: 54
   jumptime: 0.4
+  coyoteTime: 0
+  jumpBufferLength: 0
   isGrounded: 0
   groundcheck: {fileID: 972365582}
   checkRadius: 0.5
@@ -11995,7 +11998,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countText: {fileID: 1283337208}
   cheesecount: 0
-  collected: 0
 --- !u!114 &936765976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12030,6 +12032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e51156189eaae2245924b136bb893dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cheeseCoin: {fileID: 0}
 --- !u!114 &936765978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12102,6 +12105,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stampingSpeed: 100
+  groundCheck: {fileID: 0}
+  dustEffect: {fileID: 0}
 --- !u!95 &936765983
 Animator:
   serializedVersion: 3
@@ -27116,8 +27121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc2cf8de166e6c04fba789ac331ec852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundCheck: {fileID: 972365581}
-  dustEffect: {fileID: 723835315}
 --- !u!1 &1152173203
 GameObject:
   m_ObjectHideFlags: 0
@@ -31112,7 +31115,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2036393124}
         m_TargetAssemblyTypeName: Dialogue, Assembly-CSharp
-        m_MethodName: Skip
+        m_MethodName: NextSentence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

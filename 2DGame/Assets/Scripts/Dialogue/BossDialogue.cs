@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class BossDialogue : MonoBehaviour
 {
     public GameObject continueButton;
+    public GameObject skipButton;
     public GameObject dialogueBox;
     public GameObject SpeechBubble;
     public GameObject mouse;
@@ -30,7 +31,8 @@ public class BossDialogue : MonoBehaviour
     {
         dialogueBox.SetActive(false);
         continueButton.SetActive(false);
-        //SpeechBubble.SetActive(false);
+        skipButton.SetActive(false);
+        SpeechBubble.SetActive(false);
         speechBubble = SpeechBubble.GetComponent<BossSpeechBubble>();
         boss = bossObject.GetComponent<Boss>();
     }
@@ -46,6 +48,7 @@ public class BossDialogue : MonoBehaviour
     public IEnumerator Type()
     {
         dialogueBox.SetActive(true);
+        skipButton.SetActive(true);
         SpeechBubble.SetActive(true);
         speechBubble.NextSpeaker();
         foreach (char letter in sentences[index].ToCharArray())
@@ -78,5 +81,14 @@ public class BossDialogue : MonoBehaviour
             mouse.GetComponent<MouseController>().enabled = true;
             FindObjectOfType<AudioManager>().Play("snail_fight");
         }
+    }
+
+    public void Skip()
+    {
+        dialogueText.text = "";
+        dialogueBox.SetActive(false);
+        SpeechBubble.SetActive(false);
+        mouse.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+        mouse.GetComponent<MouseController>().enabled = true;
     }
 }
