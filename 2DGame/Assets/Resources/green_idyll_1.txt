@@ -1,0 +1,5 @@
+Hallo, ich bin Professor Primus Erclaire.
+Ich werde dir alles erklären.
+Drücke die Pfeiltasten < > oder A und D zum Bewegen.
+Drücke die Leertaste zum Springen.
+Wenn man links klickt oder Strg drückt soll angeblich auch etwas passieren.

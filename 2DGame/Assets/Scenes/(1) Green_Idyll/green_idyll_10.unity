@@ -12934,7 +12934,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1988001243}
         m_TargetAssemblyTypeName: BossDialogue, Assembly-CSharp
-        m_MethodName: NextSentence
+        m_MethodName: Skip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

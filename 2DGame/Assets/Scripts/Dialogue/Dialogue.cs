@@ -78,10 +78,23 @@ public class Dialogue : MonoBehaviour
 
     public void Skip()
     {
-        dialogueText.text = "";
-        dialogueBox.SetActive(false);
-        SpeechBubble.SetActive(false);
-        mouse.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
-        mouse.GetComponent<MouseController>().enabled = true;
+        FindObjectOfType<AudioManager>().Play("click");
+        skipButton.SetActive(false);
+
+        if (index < sentences.Length - 1)
+        {
+            index++;
+            dialogueText.text = "";
+            dialogueText.text = sentences[index];
+            speechBubble.NextSpeaker();
+        }
+        else
+        {
+            dialogueText.text = "";
+            dialogueBox.SetActive(false);
+            SpeechBubble.SetActive(false);
+            mouse.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+            mouse.GetComponent<MouseController>().enabled = true;
+        }
     }
 }
