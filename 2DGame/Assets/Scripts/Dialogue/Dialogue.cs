@@ -78,6 +78,7 @@ public class Dialogue : MonoBehaviour
 
     public void Skip()
     {
+        StopCoroutine(Type());
         FindObjectOfType<AudioManager>().Play("click");
         skipButton.SetActive(false);
 
