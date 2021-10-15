@@ -19,26 +19,22 @@ public class MouseController : MonoBehaviour
     public float jumpBufferLength;
     private float jumpBufferCounter;
 
-    [HideInInspector]
-    public bool isGrounded;
+    [HideInInspector] public bool isGrounded;
     public Transform groundcheck;
     public float checkRadius;
     public LayerMask whatIsGround;
 
     PowerUps powerUps;
 
-    public bool isFacingLeft;
+    [HideInInspector] public bool isFacingLeft;
 
     private bool isShooting;
 
-    [SerializeField]
-    GameObject bullet;
+    [SerializeField] GameObject bullet;
     
-    [SerializeField]
-    Transform bulletSpawnPos;
+    [SerializeField] Transform bulletSpawnPos;
 
-    [SerializeField]
-    private float shootDelay = 0.5f;
+    [SerializeField] private float shootDelay = 0.5f;
 
     void Start()
     {
@@ -152,7 +148,7 @@ public class MouseController : MonoBehaviour
 		if (! HasReachedTV(acceleration))
 		{
 			int oldSign = Math.Sign(rb.velocity.x);
-			rb.velocity += new Vector2(acceleration * Time.fixedDeltaTime, 0);
+			rb.velocity += new Vector2(acceleration, 0);
 
 			if (HasReachedTV(acceleration))
 				rb.velocity = new Vector2(Math.Sign(rb.velocity.x) * speed, rb.velocity.y);
