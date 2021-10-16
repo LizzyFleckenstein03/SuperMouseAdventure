@@ -26,6 +26,6 @@ public class CameraBehaviour : MonoBehaviour
             cameraLocked = true;
         }*/
 
-        transform.position = new Vector3(mouse.transform.position.x, -11, -10);
+        transform.position = new Vector3(mouse.transform.position.x, -6, -10);
     }
 }

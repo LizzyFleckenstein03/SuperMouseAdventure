@@ -4236,7 +4236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d8051f3ea1f9294c890e6d3a53d6837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  begrenzer: {fileID: 1284463699}
+  limiter: {fileID: 0}
   mouse: {fileID: 936765968}
   cameraLock: {fileID: 1790915304}
   cameraLocked: 0
@@ -11780,10 +11780,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 36
-  jumpForce: 54
+  jumpForce: 100
   jumptime: 0.4
-  coyoteTime: 0
-  jumpBufferLength: 0
+  coyoteTime: 0.3
+  jumpBufferLength: 0.5
   isGrounded: 0
   groundcheck: {fileID: 972365582}
   checkRadius: 0.5
@@ -30201,7 +30201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lastCheckpointPos: {x: 0, y: 0, z: 0}
   firstCheckpoint: {fileID: 936765971}
-  mouse: {fileID: 1649732366}
+  mouse: {fileID: 214740917}
   lastCheeseCount: 0
   isCheeseCoinCollected: 0
 --- !u!1 &1423339812
