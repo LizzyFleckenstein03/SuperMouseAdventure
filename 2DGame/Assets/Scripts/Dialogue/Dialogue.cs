@@ -18,10 +18,11 @@ public class Dialogue : MonoBehaviour
 
     public string[] sentences;
 
-    [HideInInspector]
-    public int index;
+    [HideInInspector] public int index;
 
     public float typingSpeed;
+
+    [SerializeField] DialogueTrigger dialogueTrigger;
 
     void Start()
     {
@@ -34,7 +35,7 @@ public class Dialogue : MonoBehaviour
 
     void Update()
     {
-        if (dialogueText.text == sentences[index])
+        if (dialogueText.text == dialogueTrigger.dialogueString.text)
         {
             continueButton.SetActive(true);
             skipButton.SetActive(true);
@@ -97,5 +98,10 @@ public class Dialogue : MonoBehaviour
             mouse.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
             mouse.GetComponent<MouseController>().enabled = true;
         }
+    }
+
+    public void TriggerDialogue()
+    {
+
     }
 }

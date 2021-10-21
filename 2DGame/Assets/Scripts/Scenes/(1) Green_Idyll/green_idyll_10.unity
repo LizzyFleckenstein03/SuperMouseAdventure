@@ -365,8 +365,8 @@ GameObject:
   m_Component:
   - component: {fileID: 61813878}
   - component: {fileID: 61813877}
-  - component: {fileID: 61813879}
   - component: {fileID: 61813880}
+  - component: {fileID: 61813879}
   m_Layer: 0
   m_Name: key
   m_TagString: Untagged
@@ -439,8 +439,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61813879
-BoxCollider2D:
+--- !u!114 &61813879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61813876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886463e671f8ae24393c5c6462ca408f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followSpeed: 3
+  followTarget: {fileID: 477672911}
+--- !u!58 &61813880
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -453,31 +467,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.66, y: 1.8}
-    newSize: {x: 3.66, y: 1.8}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.66, y: 1.8}
-  m_EdgeRadius: 0
---- !u!114 &61813880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 61813876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec6c8f50addb8f948859ed266985e590, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePos: {fileID: 477672911}
+  m_Radius: 1.83
 --- !u!1 &63049578
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,7 +827,9 @@ GameObject:
   - component: {fileID: 164304310}
   - component: {fileID: 164304309}
   - component: {fileID: 164304314}
+  - component: {fileID: 164304316}
   - component: {fileID: 164304313}
+  - component: {fileID: 164304315}
   m_Layer: 0
   m_Name: cage
   m_TagString: Untagged
@@ -1028,7 +1021,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.425354, y: 3.7279692}
-  m_ConnectedAnchor: {x: 1.7009182, y: 0.020493668}
+  m_ConnectedAnchor: {x: 1.700918, y: 0.020493666}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1058,6 +1051,49 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &164304315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164304306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f340ade284133b643a3f88e4e9b511b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
+  unlockedLockSprite: {fileID: 0}
+  doorOpen: 0
+  waitingToOpen: 0
+  isDoor: 0
+--- !u!61 &164304316
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164304306}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.28045654, y: -5.091567}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8.63, y: 8.13}
+    newSize: {x: 8.63, y: 8.13}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20.88794, y: 18.313133}
+  m_EdgeRadius: 0
 --- !u!1 &169271316
 GameObject:
   m_ObjectHideFlags: 0
@@ -2641,7 +2677,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.4678023, y: -0.0000107753995}
+  m_ConnectedAnchor: {x: 1.4678025, y: -0.000010779125}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -9059,6 +9095,7 @@ GameObject:
   - component: {fileID: 936765981}
   - component: {fileID: 936765977}
   - component: {fileID: 936765982}
+  - component: {fileID: 936765984}
   m_Layer: 0
   m_Name: mouse
   m_TagString: Player
@@ -9553,6 +9590,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &936765984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936765968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be84bf2c5fcd0f4da6f7f803f0ebab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followingKey: {fileID: 0}
 --- !u!1 &972365581
 GameObject:
   m_ObjectHideFlags: 0
@@ -10186,7 +10236,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.4677973, y: -0.000011239202}
+  m_ConnectedAnchor: {x: 1.4677982, y: -0.000011250378}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -14520,7 +14570,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559449781}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 305.74, y: -8.23, z: 0}
+  m_LocalPosition: {x: 305.74, y: -2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -15352,7 +15402,7 @@ MonoBehaviour:
   - {fileID: 919155401}
   - {fileID: 926472388}
   m_Bounds:
-    m_Center: {x: -0.000016093254, y: 0.00000047683716, z: 0}
+    m_Center: {x: -0.000016093254, y: 0.0000009536743, z: 0}
     m_Extent: {x: 1.0150161, y: 7.5, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -15415,7 +15465,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709500035}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 305.8, y: 3.74, z: 0}
+  m_LocalPosition: {x: 305.8, y: 9.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1131237439}

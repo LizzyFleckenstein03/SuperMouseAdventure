@@ -108,4 +108,9 @@ public class BossDialogue : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("snail_fight");
         }
     }
+
+    public void TriggerDialogue()
+    {
+
+    }
 }

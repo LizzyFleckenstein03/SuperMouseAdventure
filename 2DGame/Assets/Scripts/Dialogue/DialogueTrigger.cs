@@ -9,6 +9,8 @@ public class DialogueTrigger : MonoBehaviour
 
     Dialogue dialogue;
 
+    public TextAsset dialogueString;
+
     void Start()
     {
         dialogue = DialogueManager.GetComponent<Dialogue>();
