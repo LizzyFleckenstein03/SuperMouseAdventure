@@ -18,6 +18,6 @@ public class SpeechBubble : MonoBehaviour
 
     public void NextSpeaker()
     {
-        transform.position = speakers[dialogue.index].position;
+        transform.position = speakers[0].position;
     }
 }

@@ -16,13 +16,11 @@ public class Dialogue : MonoBehaviour
 
     public Text dialogueText;
 
-    public string[] sentences;
-
     [HideInInspector] public int index;
 
     public float typingSpeed;
 
-    [SerializeField] DialogueTrigger dialogueTrigger;
+    [SerializeField] DialogueTrigger[] dialogueTriggerer;
 
     void Start()
     {
@@ -35,7 +33,7 @@ public class Dialogue : MonoBehaviour
 
     void Update()
     {
-        if (dialogueText.text == dialogueTrigger.dialogueString.text)
+        if (dialogueText.text == dialogueTriggerer[0].stringFromFile[0].text)
         {
             continueButton.SetActive(true);
             skipButton.SetActive(true);
@@ -48,7 +46,15 @@ public class Dialogue : MonoBehaviour
         skipButton.SetActive(true);
         speechBubble.NextSpeaker();
         SpeechBubble.SetActive(true);
-        foreach (char letter in sentences[index].ToCharArray())
+        /*foreach (char letter in sentences[index].ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }*/
+
+        //dialogueText.text = dialogueTrigger.stringFromFile[0].text;
+
+        foreach (char letter in dialogueTriggerer[0].stringFromFile[1].text.ToCharArray())
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
@@ -57,7 +63,7 @@ public class Dialogue : MonoBehaviour
 
     public void NextSentence()
     {
-        FindObjectOfType<AudioManager>().Play("click");
+        /*FindObjectOfType<AudioManager>().Play("click");
         continueButton.SetActive(false);
 
         if (index < sentences.Length - 1)
@@ -74,12 +80,13 @@ public class Dialogue : MonoBehaviour
             SpeechBubble.SetActive(false);
             mouse.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
             mouse.GetComponent<MouseController>().enabled = true;
-        }
+        }*/
+        dialogueText.text = dialogueTriggerer[0].stringFromFile[0].text;
     }
 
     public void Skip()
     {
-        StopCoroutine(Type());
+        /*StopCoroutine(Type());
         FindObjectOfType<AudioManager>().Play("click");
         skipButton.SetActive(false);
 
@@ -97,11 +104,7 @@ public class Dialogue : MonoBehaviour
             SpeechBubble.SetActive(false);
             mouse.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
             mouse.GetComponent<MouseController>().enabled = true;
-        }
-    }
-
-    public void TriggerDialogue()
-    {
-
+        }*/
+        dialogueText.text = dialogueTriggerer[0].stringFromFile[0].text;
     }
 }

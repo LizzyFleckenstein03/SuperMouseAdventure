@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    [SerializeField]
-    GameObject DialogueManager;
+    [SerializeField] GameObject DialogueManager;
 
     Dialogue dialogue;
 
-    public TextAsset dialogueString;
+    public TextAsset[] stringFromFile;
 
     void Start()
     {
@@ -18,12 +17,9 @@ public class DialogueTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if(collision.tag == "Player")
         {
             StartCoroutine(dialogue.Type());
-            collision.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
-            collision.gameObject.GetComponent<MouseController>().enabled = false;
-            GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 }
