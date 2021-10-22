@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CheeseCoin : MonoBehaviour
 {
-    public bool cheeseCoinCollected;
+    [HideInInspector] public bool cheeseCoinCollected;
 
     public GameObject cheeseCoin;
      
@@ -24,8 +24,6 @@ public class CheeseCoin : MonoBehaviour
         {
             cheeseCoinImage.sprite = missingCheeseCoin;
         }
-
-        cheeseCoin.transform.Rotate(new Vector3(0, 0, 60) * Time.deltaTime);
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
