@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class KeyHolder : MonoBehaviour
 {
-    public Key followingKey;
+    [HideInInspector] public Key followingKey;
 }
