@@ -19,6 +19,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
+            GetComponent<BoxCollider2D>().enabled = false;
             StartCoroutine(dialogue.Type());
         }
     }

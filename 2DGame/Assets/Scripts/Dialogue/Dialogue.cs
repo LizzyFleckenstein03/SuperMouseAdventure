@@ -16,7 +16,8 @@ public class Dialogue : MonoBehaviour
 
     public Text dialogueText;
 
-    [HideInInspector] public int index;
+    int sffIndex = 0;
+    int dtIndex = 0;
 
     public float typingSpeed;
 
@@ -33,10 +34,14 @@ public class Dialogue : MonoBehaviour
 
     void Update()
     {
-        if (dialogueText.text == dialogueTriggerer[0].stringFromFile[0].text)
+        if (dialogueText.text == dialogueTriggerer[dtIndex].stringFromFile[sffIndex].text)
         {
             continueButton.SetActive(true);
             skipButton.SetActive(true);
+        } 
+        else 
+        {
+            continueButton.SetActive(false);
         }
     }
 
@@ -46,15 +51,9 @@ public class Dialogue : MonoBehaviour
         skipButton.SetActive(true);
         speechBubble.NextSpeaker();
         SpeechBubble.SetActive(true);
-        /*foreach (char letter in sentences[index].ToCharArray())
-        {
-            dialogueText.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
-        }*/
+        dialogueText.text = "";
 
-        //dialogueText.text = dialogueTrigger.stringFromFile[0].text;
-
-        foreach (char letter in dialogueTriggerer[0].stringFromFile[1].text.ToCharArray())
+        foreach (char letter in dialogueTriggerer[dtIndex].stringFromFile[sffIndex].text.ToCharArray())
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
@@ -81,7 +80,10 @@ public class Dialogue : MonoBehaviour
             mouse.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
             mouse.GetComponent<MouseController>().enabled = true;
         }*/
-        dialogueText.text = dialogueTriggerer[0].stringFromFile[0].text;
+        if(index < dialogueTriggerer[dtIndex].stringFromFile.Length) {
+                    index += 1;
+        }
+        StartCoroutine(Type());
     }
 
     public void Skip()
@@ -105,6 +107,6 @@ public class Dialogue : MonoBehaviour
             mouse.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
             mouse.GetComponent<MouseController>().enabled = true;
         }*/
-        dialogueText.text = dialogueTriggerer[0].stringFromFile[0].text;
+        dialogueText.text = dialogueTriggerer[index].stringFromFile[index].text;
     }
 }
