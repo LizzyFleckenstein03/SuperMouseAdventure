@@ -62,51 +62,20 @@ public class Dialogue : MonoBehaviour
 
     public void NextSentence()
     {
-        /*FindObjectOfType<AudioManager>().Play("click");
-        continueButton.SetActive(false);
+        if(sffIndex < (dialogueTriggerer[dtIndex].stringFromFile.Length - 1)) {
+                    sffIndex++;
+        }
+        else if (sffIndex == (dialogueTriggerer[dtIndex].stringFromFile.Length - 1))
+        {
+            sffIndex = 0;
+            dtIndex++;
+        }
 
-        if (index < sentences.Length - 1)
-        {
-            index++;
-            dialogueText.text = "";
-            StartCoroutine(Type());
-            speechBubble.NextSpeaker();
-        }
-        else
-        {
-            dialogueText.text = "";
-            dialogueBox.SetActive(false);
-            SpeechBubble.SetActive(false);
-            mouse.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
-            mouse.GetComponent<MouseController>().enabled = true;
-        }*/
-        if(index < dialogueTriggerer[dtIndex].stringFromFile.Length) {
-                    index += 1;
-        }
         StartCoroutine(Type());
     }
 
     public void Skip()
     {
-        /*StopCoroutine(Type());
-        FindObjectOfType<AudioManager>().Play("click");
-        skipButton.SetActive(false);
-
-        if (index < sentences.Length - 1)
-        {
-            index++;
-            dialogueText.text = "";
-            dialogueText.text = sentences[index];
-            speechBubble.NextSpeaker();
-        }
-        else
-        {
-            dialogueText.text = "";
-            dialogueBox.SetActive(false);
-            SpeechBubble.SetActive(false);
-            mouse.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
-            mouse.GetComponent<MouseController>().enabled = true;
-        }*/
-        dialogueText.text = dialogueTriggerer[index].stringFromFile[index].text;
+        dialogueText.text = dialogueTriggerer[dtIndex].stringFromFile[sffIndex].text;
     }
 }
