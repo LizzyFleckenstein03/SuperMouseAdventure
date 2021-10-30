@@ -16,6 +16,8 @@ public class EnemyCollision : MonoBehaviour
 
     EnemyScript eS;
 
+    JumpOnEnemies jumpOnEnemies;
+
     public float flashingTime = 0.1f;
 
     private bool invulnerable = false;
@@ -29,6 +31,7 @@ public class EnemyCollision : MonoBehaviour
         powerUps = mouse.GetComponent<PowerUps>();
         health = mouse.GetComponent<Health>();
         eS = GetComponent<EnemyScript>();
+        jumpOnEnemies = GameObject.FindGameObjectWithTag("GroundCheck").GetComponent<JumpOnEnemies>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -55,6 +58,7 @@ public class EnemyCollision : MonoBehaviour
     IEnumerator GetInvincible()
     {
         invulnerable = true;
+        jumpOnEnemies.stunned = true;
         Physics2D.IgnoreLayerCollision(7, 8, true);
         for (int i = 0; i < 4; i++)
         {
@@ -66,6 +70,7 @@ public class EnemyCollision : MonoBehaviour
             yield return new WaitForSeconds(flashingTime);
         }
         Physics2D.IgnoreLayerCollision(7, 8, false);
+        jumpOnEnemies.stunned = false;
         invulnerable = false;
     }
 }

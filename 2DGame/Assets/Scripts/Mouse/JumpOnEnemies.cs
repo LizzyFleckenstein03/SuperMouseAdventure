@@ -5,15 +5,17 @@ using UnityEngine;
 public class JumpOnEnemies : MonoBehaviour
 {
     EnemyScript enemyScript;
-    
+
     [SerializeField]
     GameObject mouse;
 
     public float knockBackValue = 30;
 
+    public bool stunned = false;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy") && !stunned)
         {
             enemyScript = collision.gameObject.GetComponent<EnemyScript>();
 

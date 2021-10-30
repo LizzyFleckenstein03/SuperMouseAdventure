@@ -17,6 +17,7 @@ TagManager:
   - Thorn
   - Bullet
   - Stamp
+  - GroundCheck
   layers:
   - Default
   - TransparentFX

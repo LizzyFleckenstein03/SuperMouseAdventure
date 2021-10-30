@@ -9550,8 +9550,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86228eec2ce28124cae697faf008036d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gardenCheese: {fileID: 405401497}
-  mouseRenderer: {fileID: 936765970}
   mouseIsGardener: 0
 --- !u!114 &936765981
 MonoBehaviour:
@@ -9625,7 +9623,7 @@ GameObject:
   - component: {fileID: 972365584}
   m_Layer: 0
   m_Name: GroundCheck
-  m_TagString: Untagged
+  m_TagString: GroundCheck
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9674,6 +9672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouse: {fileID: 936765968}
   knockBackValue: 30
+  stunned: 0
 --- !u!1 &994169121
 GameObject:
   m_ObjectHideFlags: 0
