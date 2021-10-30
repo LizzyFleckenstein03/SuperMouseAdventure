@@ -1627,7 +1627,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: flowers
     clip: {fileID: 8300000, guid: e2a660c310e818f4287449f652a628c7, type: 3}
-    volume: 0
+    volume: 1
     pitch: 1
     source: {fileID: 0}
   - name: snail_fight
