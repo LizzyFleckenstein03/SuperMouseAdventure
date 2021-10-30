@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class PowerUps : MonoBehaviour
 {
-    public GameObject gardenCheese;
-    public SpriteRenderer mouseRenderer;
-
     public bool mouseIsGardener;
 
     public void OnTriggerEnter2D(Collider2D collision)

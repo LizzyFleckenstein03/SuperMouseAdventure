@@ -16,7 +16,7 @@ public class EnemyCollision : MonoBehaviour
 
     EnemyScript eS;
 
-    public float flashingTime = 0.3f;
+    public float flashingTime = 0.1f;
 
     private bool invulnerable = false;
 
@@ -66,8 +66,6 @@ public class EnemyCollision : MonoBehaviour
             yield return new WaitForSeconds(flashingTime);
         }
         Physics2D.IgnoreLayerCollision(7, 8, false);
-        spriteRenderer.enabled = true;
-        trailRenderer.enabled = true;
         invulnerable = false;
     }
 }
