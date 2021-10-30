@@ -3188,7 +3188,7 @@ SpriteRenderer:
   m_DrawMode: 2
   m_Size: {x: 280, y: 64.8}
   m_AdaptiveModeThreshold: 0
-  m_SpriteTileMode: 1
+  m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
