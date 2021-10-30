@@ -1068,6 +1068,7 @@ MonoBehaviour:
   doorOpen: 0
   waitingToOpen: 0
   isDoor: 0
+  connectedToDialogue: 0
 --- !u!61 &164304316
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3185,7 +3186,7 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 2
+  m_DrawMode: 0
   m_Size: {x: 280, y: 64.8}
   m_AdaptiveModeThreshold: 0
   m_SpriteTileMode: 0
@@ -3201,7 +3202,7 @@ Transform:
   m_GameObject: {fileID: 547884906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.4, y: -5.4, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 37
@@ -3396,7 +3397,6 @@ GameObject:
   - component: {fileID: 678625804}
   - component: {fileID: 678625803}
   - component: {fileID: 678625802}
-  - component: {fileID: 678625801}
   m_Layer: 0
   m_Name: speech_bubble
   m_TagString: Untagged
@@ -3404,23 +3404,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &678625801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 678625800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c29d09f2b5174b07812a2ca95ed3316, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueManager: {fileID: 1988001242}
-  speakers:
-  - {fileID: 848268148}
-  - {fileID: 477672911}
-  - {fileID: 610596341}
 --- !u!95 &678625802
 Animator:
   serializedVersion: 3
@@ -10130,7 +10113,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1988001243}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Dialogue, Assembly-CSharp
         m_MethodName: Skip
         m_Mode: 1
@@ -10597,7 +10580,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1091878262}
   - component: {fileID: 1091878263}
-  - component: {fileID: 1091878261}
   m_Layer: 0
   m_Name: bossTrigger
   m_TagString: Untagged
@@ -10605,21 +10587,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1091878261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1091878260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04fb4457cc4eca346ae4b0599f20569e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogueManager: {fileID: 1988001242}
-  stringFromFile:
-  - {fileID: 4900000, guid: 99663c588e5c94c75bfaf569863566eb, type: 3}
 --- !u!4 &1091878262
 Transform:
   m_ObjectHideFlags: 0
@@ -12378,7 +12345,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1988001243}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Dialogue, Assembly-CSharp
         m_MethodName: NextSentence
         m_Mode: 1
@@ -14672,7 +14639,6 @@ GameObject:
   - component: {fileID: 1559449785}
   - component: {fileID: 1559449784}
   - component: {fileID: 1559449787}
-  - component: {fileID: 1559449786}
   m_Layer: 0
   m_Name: james
   m_TagString: Untagged
@@ -14877,22 +14843,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1559449786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559449781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04fb4457cc4eca346ae4b0599f20569e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogueManager: {fileID: 1988001242}
-  stringFromFile:
-  - {fileID: 4900000, guid: 9e3ebf127de46d54980942349187e001, type: 3}
-  - {fileID: 4900000, guid: c2af20065458e364780ce893c92cbb9d, type: 3}
 --- !u!61 &1559449787
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14930,6 +14880,7 @@ GameObject:
   - component: {fileID: 1583346861}
   - component: {fileID: 1583346863}
   - component: {fileID: 1583346862}
+  - component: {fileID: 1583346864}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -14997,6 +14948,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583346860}
   m_CullTransparentMesh: 1
+--- !u!114 &1583346864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583346860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4067ff4ae353511e96589aad288250c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1592579562
 GameObject:
   m_ObjectHideFlags: 0
@@ -16120,7 +16083,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1988001244}
-  - component: {fileID: 1988001243}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -16128,28 +16090,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1988001243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988001242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84f62f9206a55914bb1e69401b9a1b82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  continueButton: {fileID: 1400511866}
-  skipButton: {fileID: 1006741758}
-  dialogueBox: {fileID: 1583346860}
-  SpeechBubble: {fileID: 678625800}
-  mouse: {fileID: 936765968}
-  dialogueText: {fileID: 30332658}
-  typingSpeed: 0.04
-  dialogueTriggerer:
-  - {fileID: 1559449786}
-  - {fileID: 1091878261}
 --- !u!4 &1988001244
 Transform:
   m_ObjectHideFlags: 0

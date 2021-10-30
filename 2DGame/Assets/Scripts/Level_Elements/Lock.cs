@@ -14,6 +14,8 @@ public class Lock : MonoBehaviour
 
     public bool isDoor;
 
+    [SerializeField] bool connectedToDialogue;
+
     // Start is called before the first frame update
     void Start()
     {
