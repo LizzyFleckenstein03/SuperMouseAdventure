@@ -16146,7 +16146,6 @@ MonoBehaviour:
   SpeechBubble: {fileID: 678625800}
   mouse: {fileID: 936765968}
   dialogueText: {fileID: 30332658}
-  index: 0
   typingSpeed: 0.04
   dialogueTriggerer:
   - {fileID: 1559449786}
