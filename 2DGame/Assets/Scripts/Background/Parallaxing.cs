@@ -7,7 +7,7 @@ public class Parallaxing : MonoBehaviour
     [SerializeField] private Vector2 parallaxEffectMultiplier;
     [SerializeField] private bool infiniteHorizontal;
     [SerializeField] private bool infiniteVertical;
-    
+
     private Transform cameraTransform;
     Vector3 lastCameraPosition;
     private float textureUnitSizeX;
@@ -29,7 +29,7 @@ public class Parallaxing : MonoBehaviour
         transform.position += new Vector3(deltaMovement.x * parallaxEffectMultiplier.x, deltaMovement.y * parallaxEffectMultiplier.y);
         lastCameraPosition = cameraTransform.position;
 
-        if(infiniteVertical)
+        if(infiniteHorizontal)
         {
             if (Mathf.Abs(cameraTransform.position.x - transform.position.x) >= textureUnitSizeX)
             {
@@ -38,7 +38,7 @@ public class Parallaxing : MonoBehaviour
             }
         }
 
-        if(infiniteHorizontal)
+        if(infiniteVertical)
         {
             if (Mathf.Abs(cameraTransform.position.y - transform.position.y) >= textureUnitSizeY)
             {
